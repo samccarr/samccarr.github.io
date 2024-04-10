@@ -72,3 +72,23 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
+
+.source-list {
+    width: 75%;
+    margin: auto;
+}
+
+.source-list h2 {
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.source-list p {
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
