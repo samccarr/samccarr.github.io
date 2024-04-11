@@ -5,7 +5,7 @@
     --hover-color: #75BF56;
     --navbar-font-size: 1.5rem;
     --bar-color: #007f00;
-    --header-font: "Urbanist";
+    --header-font: "Urbanist", Inter, sans-serif;
     --header-font-weight: 700;
 }
   
@@ -116,6 +116,22 @@ h2 {
 /*Map styles*/
 
 .faqHeader{
+    width: fit-content;
     font-family: var(--header-font);
     font-weight: var(--header-font-weight);
+    line-height: .5rem;
 }
+.faqUnderline{
+    height: 10px;
+    width: 100%;
+    background-color: var(--bar-color);
+    border-radius: 8vmin;
+}
+.mapAndFAQ, .mapContent, .faq{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*End of map styles*/
