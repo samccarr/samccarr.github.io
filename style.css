@@ -39,7 +39,7 @@ body {
 .navbar .current-page::after {
     content: '';
     display: block;
-    width: 75%;
+    width: 25%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
