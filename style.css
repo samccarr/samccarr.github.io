@@ -12,15 +12,11 @@ body {
     padding: 0;
 }
 
-
-
-
-
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 6rem;
+    padding: 2rem;
 }
   
 .navbar a {
@@ -30,6 +26,10 @@ body {
     font-size: var(--navbar-font-size);
     text-align: center;
     text-decoration: none;
+}
+
+.navbar div {
+    width: 20%;
 }
 
 .navbar a:hover {
@@ -105,4 +105,8 @@ h2 {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     margin-top: 1rem;
+}
+
+.source-list a {
+    color: var(--text-color);
 }
