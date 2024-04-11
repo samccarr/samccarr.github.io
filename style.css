@@ -4,6 +4,7 @@
     --text-color: #ffffff;
     --hover-color: #75BF56;
     --navbar-font-size: 1.5rem;
+    --navbar-icon-size: 2rem;
     --bar-color: #007f00;
     --bar-secondary: rgba(173, 235, 255, 0.59);
     --header-font: "Urbanist", Inter, sans-serif;
@@ -34,6 +35,9 @@ body {
 
 .navbar div {
     width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .navbar a:hover {
@@ -49,6 +53,11 @@ body {
     margin: auto;
     margin-top: 0.5rem;
     border-radius: 2px;
+}
+
+.nav-icon {
+    height: var(--navbar-icon-size);
+    padding-right: 0.5rem;
 }
 
 .underlined-text {
