@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --background-color: #2B388F;
     --text-color: #ffffff;
     --hover-color: #75BF56;
     --navbar-font-size: 1.5rem;
     --bar-color: #007f00;
+    --header-font: "Urbanist";
+    --header-font-weight: 700;
 }
   
 body {
@@ -109,4 +112,10 @@ h2 {
 
 .source-list a {
     color: var(--text-color);
+}
+/*Map styles*/
+
+.faqHeader{
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
 }
