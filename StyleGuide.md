@@ -13,14 +13,12 @@ Main Content Areas are referring to the main focus of the page (not including th
 ## Color Palette
 The color palette depicted below is to be the exclusive color palette used in the website.
 
-### General Color Palette:
+General Color Palette: https://coolors.co/2b388f-adebff-2e7012-568c3f-007f00
 
-![image](https://github.com/samccarr/samccarr.github.io/assets/148374675/bf66183e-8487-4f98-b925-2cfcd8980835)
+![Screenshot 2024-04-11 152624](https://github.com/samccarr/samccarr.github.io/assets/148374675/92c6b061-727e-448f-b9fe-f15d5a298ab6)
 
 
-https://coolors.co/2b388f-adebff-2e7012-568c3f-007f00
-
-### Color Specifics:
+### Color Palette Specifics:
 (Note: Those without specifications are assumed to be 100 percent visable). 
 
 
