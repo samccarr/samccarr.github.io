@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --background-color: #2B388F;
     --text-color: #ffffff;
     --hover-color: #75BF56;
     --navbar-font-size: 1.5rem;
     --bar-color: #007f00;
+    --bar-secondary: rgba(173, 235, 255, 0.59);
+    --header-font: "Urbanist", Inter, sans-serif;
+    --header-font-weight: 700;
 }
   
 body {
@@ -74,7 +78,7 @@ h1 {
 /*Second Type of font*/
 h2 {
     color: var(--text-color);
-    font-family: "Urbanist", sans-serif;
+    font-family: var(--header-font);
     font-weight: 600;
     font-size: 2rem;
     text-align: center;
@@ -110,3 +114,46 @@ h2 {
 .source-list a {
     color: var(--text-color);
 }
+/*Map styles*/
+
+.faqHeader{
+    width: fit-content;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    line-height: .5rem;
+}
+.faqSubHeader{
+    font-size: 1.6rem;
+    font-family: var(--header-font);
+    margin-bottom: .5rem;
+}
+.faqUnderline{
+    height: 10px;
+    width: 100%;
+    background-color: var(--bar-color);
+    border-radius: 8vmin;
+}
+.subHeaderBar{
+    height: 10px;
+    width: 25%;
+    background-color: var(--bar-secondary);
+    border-radius: 8vmin;
+}
+.mapAndFAQ, .mapContent, .faq, .faqBottomSection, .faqBottomSegment{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.faqBottomSection{
+    width: fit-content;
+    margin-bottom: 5vh;
+}
+.subHeaderContent{
+    font-family: Inter, sans-serif;
+    font-weight: medium;
+    color: var(--text-color);
+    max-width: 23%;
+}
+
+/*End of map styles*/
