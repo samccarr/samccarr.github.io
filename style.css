@@ -38,6 +38,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
 }
 
 .navbar a:hover {
@@ -51,8 +52,11 @@ body {
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
-    margin-top: 0.5rem;
     border-radius: 2px;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-40%);
 }
 
 .nav-icon {
