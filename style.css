@@ -8,7 +8,7 @@
     --bar-color: #007f00;
     --bar-secondary: rgba(173, 235, 255, 0.59);
     --header-font: "Urbanist", Inter, sans-serif;
-    --header-font-weight: 450;
+    --header-font-weight: 400;
 }
   
 body {
@@ -173,7 +173,7 @@ h2 {
     font-family: 'Urbanist', sans-serif;
     font-weight: medium;
     color: var(--text-color);
-    max-width: 25%; 
+    max-width: 15%; 
     text-indent: 10%;
     margin-bottom: .5vh;
 }
