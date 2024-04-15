@@ -175,7 +175,7 @@ h2 {
     color: var(--text-color);
     max-width: 25%; 
     text-indent: 10%;
-    margin-bottom: 1vh;
+    margin-bottom: .5vh;
 }
 
 /*End of map styles*/
