@@ -48,7 +48,7 @@ body {
 .navbar .current-page::after {
     content: '';
     display: block;
-    width: 65%;
+    width: 45%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
@@ -67,7 +67,7 @@ body {
 /* Home Icon */
 .home-icon {
     height: var(--navbar-icon-size);
-    margin-left: 10rem;
+    padding-right: 15rem;
 }
 
 .underlined-text {
@@ -168,16 +168,16 @@ h2 {
 .faqBottomSection{
     width: fit-content;
     margin-bottom: 2vh;
+    text-indent: 5%;
+    padding: 80%;
+    margin: 50%;
 }
 .subHeaderContent{
     font-family: 'Urbanist', sans-serif;
     font-weight: medium;
     color: var(--text-color);
     max-width: 15%; 
-    text-indent: 5%;
-    margin-bottom: .5vh;
-    padding: 80%;
-    margin: 50%;
+   
 }
 
 /*End of map styles*/
