@@ -64,6 +64,12 @@ body {
     padding-right: 0.5rem;
 }
 
+/* Home Icon */
+.home-icon {
+    height: var(--navbar-icon-size);
+    padding-right: 0.1rem;
+}
+
 .underlined-text {
     position: relative;
     display: inline-block;
