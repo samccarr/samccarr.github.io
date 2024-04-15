@@ -8,7 +8,7 @@
     --bar-color: #007f00;
     --bar-secondary: rgba(173, 235, 255, 0.59);
     --header-font: "Urbanist", Inter, sans-serif;
-    --header-font-weight: 550;
+    --header-font-weight: 450;
 }
   
 body {
@@ -166,7 +166,8 @@ h2 {
     font-family: 'Urbanist', sans-serif;
     font-weight: medium;
     color: var(--text-color);
-    max-width: 35%;
+    max-width: 25%; 
+    text-indent: 10%;
 }
 
 /*End of map styles*/
