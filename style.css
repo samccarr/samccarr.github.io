@@ -34,7 +34,7 @@ body {
 }
 
 .navbar div {
-    width: 40%;
+    width: 25%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,7 +48,7 @@ body {
 .navbar .current-page::after {
     content: '';
     display: block;
-    width: 45%;
+    width: 25%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
@@ -67,7 +67,7 @@ body {
 /* Home Icon */
 .home-icon {
     height: var(--navbar-icon-size);
-    padding-right: 15rem;
+    padding-right: 60rem;
 }
 
 .underlined-text {
@@ -78,7 +78,7 @@ body {
 .underlined-text::after {
     content: '';
     display: block;
-    width: 70%;
+    width: 50%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
@@ -163,21 +163,21 @@ h2 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+    text-indent: 5%;
+    padding: 80%;
+    margin: 50%;
 }
 .faqBottomSection{
     width: fit-content;
     margin-bottom: 2vh;
-    text-indent: 5%;
-    padding: 80%;
-    margin: 50%;
+   
 }
 .subHeaderContent{
     font-family: 'Urbanist', sans-serif;
     font-weight: medium;
     color: var(--text-color);
     max-width: 15%; 
-   
+    margin-bottom: 1vh;
 }
 
 /*End of map styles*/
