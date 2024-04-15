@@ -48,7 +48,7 @@ body {
 .navbar .current-page::after {
     content: '';
     display: block;
-    width: 25%;
+    width: 20%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
@@ -98,7 +98,7 @@ h1 {
 h2 {
     color: var(--text-color);
     font-family: var(--header-font);
-    font-weight: 600;
+    font-weight: 350;
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
@@ -117,7 +117,7 @@ h2 {
 
 .source-list h2 {
     color: var(--text-color);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-size: 1.5rem;
     text-align: center;
     margin-top: 2rem;
@@ -125,7 +125,7 @@ h2 {
 
 .source-list p {
     color: var(--text-color);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-size: 1rem;
     margin-top: 1rem;
 }
@@ -175,7 +175,7 @@ h2 {
     color: var(--text-color);
     max-width: 15%; 
     text-indent: 10%;
-    margin-bottom: .5vh;
+    margin-bottom: .1vh;
 }
 
 /*End of map styles*/
