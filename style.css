@@ -48,7 +48,7 @@ body {
 .navbar .current-page::after {
     content: '';
     display: block;
-    width: 10%;
+    width: 40%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
@@ -174,8 +174,9 @@ h2 {
     font-weight: medium;
     color: var(--text-color);
     max-width: 15%; 
-    text-indent: 10%;
+    text-indent: 5%;
     margin-bottom: .1vh;
+    padding: 20%;
 }
 
 /*End of map styles*/
