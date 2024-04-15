@@ -8,7 +8,7 @@
     --bar-color: #007f00;
     --bar-secondary: rgba(173, 235, 255, 0.59);
     --header-font: "Urbanist", Inter, sans-serif;
-    --header-font-weight: 400;
+    --header-font-weight: 450;
 }
   
 body {
@@ -48,7 +48,7 @@ body {
 .navbar .current-page::after {
     content: '';
     display: block;
-    width: 40%;
+    width: 65%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
@@ -67,7 +67,7 @@ body {
 /* Home Icon */
 .home-icon {
     height: var(--navbar-icon-size);
-    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 .underlined-text {
@@ -98,7 +98,7 @@ h1 {
 h2 {
     color: var(--text-color);
     font-family: var(--header-font);
-    font-weight: 350;
+    font-weight: 400;
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
@@ -176,7 +176,8 @@ h2 {
     max-width: 15%; 
     text-indent: 5%;
     margin-bottom: .1vh;
-    padding: 20%;
+    padding: 0%;
+    margin: 0%;
 }
 
 /*End of map styles*/
