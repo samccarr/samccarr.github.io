@@ -8,7 +8,7 @@
     --bar-color: #007f00;
     --bar-secondary: rgba(173, 235, 255, 0.59);
     --header-font: "Urbanist", Inter, sans-serif;
-    --header-font-weight: 700;
+    --header-font-weight: 600;
 }
   
 body {
@@ -83,7 +83,7 @@ body {
 /*First Type of font*/
 h1 {
     color: var(--text-color);
-    font-family: 'Inter', sans-serif;
+    font-family: '"Urbanist"', sans-serif;
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
@@ -163,7 +163,7 @@ h2 {
     margin-bottom: 5vh;
 }
 .subHeaderContent{
-    font-family: "Urbanist";
+    font-family: 'Urbanist', sans-serif;
     font-weight: medium;
     color: var(--text-color);
     max-width: 40%;
