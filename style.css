@@ -179,3 +179,20 @@ h2 {
 }
 
 /*End of map styles*/
+
+/* Start of Form Styles*/
+
+.formWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.formFrame{
+    width: 100%;
+    background-color: var(--hover-color);
+    max-width: 750px;
+    height: 80vh;
+}
+/* End of Form Styles*/
