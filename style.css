@@ -8,7 +8,7 @@
     --bar-color: #007f00;
     --bar-secondary: rgba(173, 235, 255, 0.59);
     --header-font: "Urbanist", Inter, sans-serif;
-    --header-font-weight: 700;
+    --header-font-weight: 450;
 }
   
 body {
@@ -64,6 +64,12 @@ body {
     padding-right: 0.5rem;
 }
 
+/* Home Icon */
+.home-icon {
+    height: var(--navbar-icon-size);
+    padding-right: 0.1rem;
+}
+
 .underlined-text {
     position: relative;
     display: inline-block;
@@ -83,7 +89,7 @@ body {
 /*First Type of font*/
 h1 {
     color: var(--text-color);
-    font-family: 'Inter', sans-serif;
+    font-family: '"Urbanist"', sans-serif;
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
@@ -138,7 +144,7 @@ h2 {
 .faqSubHeader{
     font-size: 1.6rem;
     font-family: var(--header-font);
-    margin-bottom: .5rem;
+    margin-bottom: .1rem;
 }
 .faqUnderline{
     height: 10px;
@@ -157,16 +163,17 @@ h2 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-indent: 10%;
 }
 .faqBottomSection{
     width: fit-content;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 .subHeaderContent{
-    font-family: "Urbanist";
+    font-family: 'Urbanist', sans-serif;
     font-weight: medium;
     color: var(--text-color);
-    max-width: 40%;
+    max-width: 25%; 
 }
 
 /*End of map styles*/
