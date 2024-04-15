@@ -163,10 +163,10 @@ h2 {
     margin-bottom: 5vh;
 }
 .subHeaderContent{
-    font-family: Inter, sans-serif;
+    font-family: "Urbanist";
     font-weight: medium;
     color: var(--text-color);
-    max-width: 23%;
+    max-width: 20%;
 }
 
 /*End of map styles*/
