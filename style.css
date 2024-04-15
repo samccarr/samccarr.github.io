@@ -163,7 +163,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    text-indent: 10%;
+    
 }
 .faqBottomSection{
     width: fit-content;
@@ -174,6 +174,8 @@ h2 {
     font-weight: medium;
     color: var(--text-color);
     max-width: 25%; 
+    text-indent: 10%;
+    margin-bottom: 1vh;
 }
 
 /*End of map styles*/
