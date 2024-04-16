@@ -68,7 +68,7 @@ body {
 /* Home Icon */
 .home-icon {
     height: var(--navbar-icon-size);
-    padding-right: 0.1rem;
+    /*padding-right: 0.1rem; */
 }
 .home-word  {
     height: 10px;
@@ -98,7 +98,7 @@ h1 {
     font-family: '"Urbanist"', sans-serif;
     font-size: 2rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 } 
 /*Second Type of font*/
 h2 {
@@ -107,7 +107,7 @@ h2 {
     font-weight: 550;
     font-size: 2rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .center-elements {
@@ -181,8 +181,6 @@ h2 {
     font-family: 'Urbanist', sans-serif;
     font-weight: medium;
     color: var(--text-color);
-    max-width: 15%; 
-    margin-bottom: 1vh;
 }
 
 /*End of map styles*/
