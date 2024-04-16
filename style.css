@@ -84,7 +84,7 @@ body {
 .underlined-text::after {
     content: '';
     display: block;
-    width: 20%;
+    width: 10%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
@@ -169,7 +169,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    text-indent: 5%;
+   /* text-indent: 5%; */
   
 }
 .faqBottomSection{
