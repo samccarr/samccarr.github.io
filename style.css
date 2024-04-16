@@ -129,7 +129,7 @@ p {
     left: 0; 
     height: 4px;
     background-color: var(--bar-color); /* primary bar color */
-    transition: left 0.3s ease, width 0.3s ease; /* Smooth transition */
+    transition: left 5s ease, width 0.3s ease; /* Smooth transition */
 }
 
 
