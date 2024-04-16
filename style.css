@@ -84,12 +84,13 @@ body {
 .underlined-text::after {
     content: '';
     display: block;
-    width: 10%;
+    width: 5%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
     margin-top: 0.5rem;
-    border-radius: 2px;
+    border-radius: 2px; 
+    left: 10%;
 }
 
 /*First Type of font*/
