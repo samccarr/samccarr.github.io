@@ -44,12 +44,12 @@ body {
 
 .homeword div {
         height: 10px;
-        /*padding-right:0.1rem;*/
+        padding-right:0.1rem;
 } 
 
 .homeword a {
         height: 10px;
-        /*padding-right:0.1rem;*/
+        padding-right:0.1rem;
 }
 
 .navbar a:hover {
@@ -78,7 +78,7 @@ body {
 /* Home Icon */
 .home-icon {
     height: var(--navbar-icon-size);
-    padding-right: 0.6rem; 
+    padding-right: 0.05rem; 
 }
 
 .underlined-text {
