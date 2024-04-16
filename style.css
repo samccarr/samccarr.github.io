@@ -67,11 +67,12 @@ body {
 /* Home Icon */
 .home-icon {
     height: var(--navbar-icon-size);
-    padding-right: 0.5rem;
+    padding-right: 0.1rem;
 }
 .home-word {
-    height: var(--navbar-icon-size);
-    padding-left:10rem;
+    height: 100px;
+    padding-right:10rem;
+    
 }
 
 .underlined-text {
