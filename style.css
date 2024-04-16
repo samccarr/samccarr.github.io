@@ -59,14 +59,14 @@ body {
 .navbar .current-page::after {
     content: '';
     display: block;
-    width: 10%;
+    width: 5%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
     border-radius: 2px;
     position: absolute;
     bottom: -0.5rem;
-    left: 15%;
+    left: 10%;
     transform: translateX(-40%);
 }
 
@@ -162,23 +162,24 @@ h2 {
     font-family: var(--header-font);
     font-weight: var(--header-font-weight);
     line-height: .5rem;
+    font-size: 1.8rem;
 }
 .faqSubHeader{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-family: var(--header-font);
-    margin-bottom: .5rem;
+    margin-bottom: .4rem;
 }
 .faqUnderline{
-    height: 10px;
+    height: 5px;
     width: 100%;
     background-color: var(--bar-color);
-    border-radius: 8vmin;
+    border-radius: 4vmin;
 }
 .subHeaderBar{
-    height: 10px;
-    width: 35%;
+    height: 5px;
+    width: 24%;
     background-color: var(--bar-secondary);
-    border-radius: 8vmin;
+    border-radius: 4vmin;
 }
 .mapAndFAQ, .mapContent, .faq, .faqBottomSection, .faqBottomSegment{
     display: flex;
@@ -199,9 +200,10 @@ h2 {
     font-family: 'Urbanist', sans-serif;
     font-weight: medium;
     color: var(--text-color);
-    text-indent: 5%; 
-    margin-right: 2rem;
-    margin-left: 2rem;
+    text-indent: 1.7%; 
+    margin-right: 18rem;
+    margin-left: 18rem;
+    margin-bottom: -.7rem;
 }
 
 /*End of map styles*/
@@ -217,7 +219,7 @@ h2 {
 }
 .formFrame{
     width: 100%;
-    background-color: #007f00;
+    background-color: var(--background-color);
     max-width: 750px;
     height: 80vh;
 }
