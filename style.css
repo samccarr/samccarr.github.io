@@ -49,14 +49,14 @@ body {
 .navbar .current-page::after {
     content: '';
     display: block;
-    width: 25%;
+    width: 10%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
     border-radius: 2px;
     position: absolute;
     bottom: -0.5rem;
-    left: 50%;
+    left: 10%;
     transform: translateX(-40%);
 }
 
