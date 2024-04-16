@@ -198,7 +198,7 @@ h2 {
 }
 .formFrame{
     width: 100%;
-    background-color: var(--hover-color);
+    background-color: #007f00;
     max-width: 750px;
     height: 80vh;
 }
