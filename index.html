@@ -4,17 +4,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-        <img class="home-icon" src="Assets/home.png">
-    </div>
     <div class="navbar">
-        <div class="current-page">  
-            <div class="homeword">
-                
-                <div>
-                      <a href="index.html">Home</a>
-                </div>
-            </div>
+        <div>
+            <img class="home-icon" src="Assets/home.png">
+            <a href="index.html" class="current-page">Home</a>
+        </div>
         <div>
             <img class="nav-icon" src="Assets/location_pin.png">
             <a href="map.html">Map</a>
@@ -27,8 +21,9 @@
             <a href="sources.html">Resources</a>
         </div>
     </div>
-    </div>
-      <h1>Electric Vehicles and Tribal Nations</h1>
-    </div>
+    <div class="active-indicator"></div> <!-- The dynamic underline element -->
+    <h1>Electric Vehicles and Tribal Nations</h1>
+    <!-- JavaScript file -->
+    <script src="active-nav.js"></script>
   </body>
 </html>

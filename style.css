@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --background-color: #2B388F;
     --text-color: #ffffff;
@@ -18,6 +19,7 @@ body {
 }
 
 .navbar {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -55,7 +57,7 @@ body {
 .navbar a:hover {
     color: var(--hover-color);
 }
-
+/* keeping incase :)
 .navbar .current-page::after {
     content: '';
     display: block;
@@ -68,6 +70,23 @@ body {
     bottom: -0.5rem;
     left: 10%;
     transform: translateX(-40%);
+}
+*/
+
+/* Styles for the active link */
+.navbar a.current-page {
+    /* Styles for the active link text (e.g., color, font-weight) */
+    color: var(--hover-color); /* change color of active link */
+}
+
+/* New styles for the active underline indicator */
+.active-indicator {
+    position: absolute;
+    bottom: 0; /*adjust the position based on navbar's height */
+    left: 0; /* will be set dynamically by JavaScript */
+    height: 4px;
+    background-color: var(--bar-color); /* primary bar color */
+    transition: left 0.3s ease, width 0.3s ease; /* Smooth transition */
 }
 
 
