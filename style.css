@@ -42,6 +42,11 @@ body {
     position: relative;
 }
 
+.homeword div {
+        height: 10px;
+        padding-right:0.1rem;
+}
+
 .navbar a:hover {
     color: var(--hover-color);
 }
@@ -70,11 +75,6 @@ body {
     height: var(--navbar-icon-size);
     /*padding-right: 0.1rem; */
 }
-.home-word  {
-    height: 10px;
-    padding-right:0.1rem;
-    
-}
 
 .underlined-text {
     position: relative;
@@ -84,13 +84,13 @@ body {
 .underlined-text::after {
     content: '';
     display: block;
-    width: 5%;
+    width: 10%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
     margin-top: 0.5rem;
     border-radius: 2px; 
-    left: 10%;
+    left: 5%;
 }
 
 /*First Type of font*/
