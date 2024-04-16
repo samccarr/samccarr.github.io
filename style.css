@@ -205,17 +205,18 @@ h3 {
     font-family: 'Urbanist', sans-serif;
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 2rem;
-    padding-left: 5%;
+    margin-top: 1rem;
+    padding-left: 1%;
 }
 
 .source-list p {
     color: var(--text-color);
     font-family: 'Urbanist', sans-serif;
     font-size: 1rem;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+  /*  margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    */
 }
 
 .source-list a {
@@ -267,10 +268,12 @@ h3 {
     font-weight: medium;
     color: var(--text-color);
     text-indent: 1.7%; 
-    margin-right: 18rem;
-    margin-left: 18rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     margin-bottom: 0.25rem;
     margin-top: 0.5rem;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 /*End of map styles*/
