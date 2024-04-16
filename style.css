@@ -127,7 +127,7 @@ p {
 
     bottom: 0px; /*adjust the position based on navbar's height */
     left: 50px; /* will be set dynamically by JavaScript */
-    height: 4px;
+    height: 466px;
     background-color: var(--bar-color); /* primary bar color */
     transition: left 0.3s ease, width 0.3s ease; /* Smooth transition */
 }
