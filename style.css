@@ -70,12 +70,13 @@ body {
     transform: translateX(-40%);
 }
 
+
 .nav-icon {
     height: var(--navbar-icon-size);
     padding-right: 1 rem;
     padding-left: 2 rem;
-    margin-right: 0.4rem;
-    margin-left: 0.4rem;
+    margin-right: 0.3rem;
+    margin-left: 0rem;
     margin-bottom: -10%;
 }
 
@@ -97,13 +98,13 @@ body {
 .underlined-text::after {
     content: '';
     display: block;
-    width: 50%;
+    width: 95%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
     margin-top: 0.5rem;
     border-radius: 2px; 
-    left: 25%;
+    left: 35%;
 }
 
 /*First Type of font*/
@@ -130,17 +131,31 @@ h2 {
     align-items: center;
 }
 
+/*source page styling*/
 .source-list {
     width: 70%;
     margin: auto;
+    padding-left: 10%;
 }
 
+.specialcase a {
+    justify-content: left;
+}
 .source-list h2 {
     color: var(--text-color);
     font-family: 'Urbanist', sans-serif;
     font-size: 1.5rem;
     text-align: center;
     margin-top: 2rem;
+    padding-left: 20%;
+}
+.source-list h3 {
+    color: var(--text-color);
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding-left: 5%;
 }
 
 .source-list p {
@@ -203,7 +218,8 @@ h2 {
     text-indent: 1.7%; 
     margin-right: 18rem;
     margin-left: 18rem;
-    margin-bottom: -.7rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
 }
 
 /*End of map styles*/
