@@ -55,9 +55,9 @@ body {
     margin: auto;
     border-radius: 2px;
     position: absolute;
-    bottom: -0.5rem;
+    bottom: 62%;
     left: 50%;
-    transform: translateX(-40%);
+    transform: translateX(-135%);
 }
 
 .nav-icon {
@@ -70,9 +70,9 @@ body {
     height: var(--navbar-icon-size);
     padding-right: 0.1rem;
 }
-.home-word a {
+.home-word  {
     height: 100px;
-    padding-right:10rem;
+    padding-right:1rem;
     
 }
 
