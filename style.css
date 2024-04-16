@@ -122,10 +122,10 @@ p {
     color: var(--hover-color); /* change color of active link */
 }
 
-/* New styles for the active underline indicator */
+/* new styles for the active underline indicator */
 .active-indicator {
 
-    bottom: 0px; 
+    bottom: 0; 
     left: 0; 
     height: 4px;
     background-color: var(--bar-color); /* primary bar color */
