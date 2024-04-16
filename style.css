@@ -126,7 +126,7 @@ p {
 .active-indicator {
 
     bottom: 0; 
-    left: 0; 
+    left: -10; 
     height: 4px;
     background-color: var(--bar-color); /* primary bar color */
     transition: left 5s ease, width 0.3s ease; /* Smooth transition */
