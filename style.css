@@ -5,7 +5,7 @@
     --text-color: #ffffff;
     --hover-color: #75BF56;
     --navbar-font-size: 1.5rem;
-    --navbar-icon-size: 2rem;
+    --navbar-icon-size: 2.25rem;
     --bar-color: #007f00;
     --bar-secondary: rgba(173, 235, 255, 0.59);
     --header-font: "Urbanist", Inter, sans-serif;
@@ -63,6 +63,10 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+#homeIcon{
+    padding: 0;
+    transform: translateX(50%) translateY(-25%);
 }
 .homeword div {
     padding-right: 15%;
@@ -155,7 +159,7 @@ p {
 
 .nav-icon {
     height: var(--navbar-icon-size);
-    padding-right: 1rem;
+    padding-right: .9rem; 
     padding-left: 2rem;
     /* margin-right: 0.3rem;
     margin-left: 0rem;
