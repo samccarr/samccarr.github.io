@@ -52,6 +52,49 @@ body {
         padding-top: 3.5%;
 }
 
+.title div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: relative;
+}
+
+/*for the home page only*/
+.title {
+    color: var(--text-color);
+    font-family: var(--header-font);
+    font-weight: 550;
+    font-size: 2rem;
+    text-align: left;
+    margin-right: 10rem;
+    margin-left: 5.5rem;
+    padding-right: 45rem;
+    padding-left: 36.7rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    margin-top: 1.5rem;
+    margin-bottom:0rem;
+    width: 40%;
+    
+
+}
+/*for home page only */
+p {
+    display: flex;
+    color: var(--text-color);
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    width: 95%;
+    padding-left: 1.01rem;
+    text-indent: 2%;
+    margin-top: -2.5%;
+
+
+}
+
 .navbar a:hover {
     color: var(--hover-color);
 }
@@ -123,6 +166,14 @@ h2 {
     font-size: 2rem;
     text-align: center;
     margin-top: 1rem;
+}
+
+h3 {
+    color: var(--text-color);
+    font-family: var(--header-font);
+    font-weight: 550;
+    font-size: 2rem;
+    text-align: left;
 }
 
 .center-elements {
