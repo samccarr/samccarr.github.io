@@ -235,7 +235,7 @@ h2 {
 }
 .formFrame{
     width: 100%;
-    background-color: var(--background-color);
+    background-color: #b6d7e0;
     max-width: 750px;
     height: 80vh;
 }
