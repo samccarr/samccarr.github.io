@@ -124,7 +124,6 @@ p {
 
 /* New styles for the active underline indicator */
 .active-indicator {
-   
     bottom: 0; /*adjust the position based on navbar's height */
     left: -50; /* will be set dynamically by JavaScript */
     height: 4px;
