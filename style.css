@@ -185,8 +185,7 @@ h3 {
 /*source page styling*/
 .source-list {
     width: 70%;
-    margin: auto;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 .specialcase a {
@@ -213,14 +212,22 @@ h3 {
     color: var(--text-color);
     font-family: 'Urbanist', sans-serif;
     font-size: 1rem;
-  /*  margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    */
+    
+    text-align: left;
+    
+    
+   
 }
 
 .source-list a {
     color: var(--text-color);
+    margin-top: 23rem;
+    text-align: left;
+    padding-right: 30%;
+   
+
+    
+    
 }
 /*Map styles*/
 
@@ -230,11 +237,13 @@ h3 {
     font-weight: var(--header-font-weight);
     line-height: .5rem;
     font-size: 1.8rem;
+    margin-top: 1rem;
 }
 .faqSubHeader{
     font-size: 1.4rem;
     font-family: var(--header-font);
-    margin-bottom: .4rem;
+    margin-bottom: .1rem;
+    margin-top: -7.5rem;
 }
 .faqUnderline{
     height: 5px;
@@ -258,16 +267,18 @@ h3 {
 }
 .faqBottomSection{
     width: fit-content;
-    margin: auto;
-    padding: auto;
-    margin-bottom: 1vh;
+    margin: 9rem;
+    padding: 9rem;
+    margin-top: 0.5vh;
+    margin-bottom: -10rem;
+
    
 }
 .subHeaderContent{
     font-family: 'Urbanist', sans-serif;
     font-weight: medium;
     color: var(--text-color);
-    text-indent: 1.7%; 
+    text-indent: 2.5%; 
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     margin-bottom: 0.25rem;
