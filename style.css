@@ -44,7 +44,7 @@ body {
 
 .homeword div {
         height: 10px;
-        padding-right:0.1rem;
+        /*padding-right:0.1rem;*/
 }
 
 .navbar a:hover {
