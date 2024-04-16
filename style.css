@@ -42,17 +42,16 @@ body {
     position: relative;
 }
 
-/*
+
 .homeword div {
-        height: 5px;
-        width: 5px;
+    padding-right: 15%;
+        
 } 
 
 .homeword a {
-        height: 5px;
-        width: 5px;
+        padding-top: 3.5%;
 }
-*/
+
 .navbar a:hover {
     color: var(--hover-color);
 }
@@ -73,13 +72,21 @@ body {
 
 .nav-icon {
     height: var(--navbar-icon-size);
-    padding-right: 0.5rem;
+    padding-right: 1 rem;
+    padding-left: 2 rem;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+    margin-bottom: -10%;
 }
 
 /* Home Icon */
 .home-icon {
-    height: var(--navbar-icon-size);
-    /*padding-right: 0.05rem; */
+    height: 2em;
+    padding-top: 1%; 
+    margin-left: 9.4%;
+    margin-top: 0%;
+    margin-bottom: -5.4%;
+
 }
 
 .underlined-text {
