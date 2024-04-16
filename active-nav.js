@@ -1,4 +1,4 @@
-// JavaScript to add 'current-page' class to the active link and update underline position
+// js to add 'current-page' class to the active link and update underline position
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.navbar a');
     const activeIndicator = document.createElement('div');
