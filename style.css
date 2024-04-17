@@ -65,10 +65,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 #homeIcon {
   padding-right: 2rem;
   padding-left: 0.9rem;
   transform: translateX(65%) translateY(-25%);
+  z-index: -1;
 }
 .homeword div {
   padding-right: 15%;
@@ -312,13 +314,13 @@ p {
   width: 50rem;
 }
 .source-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  width: 100%;
-  margin-bottom: 5rem;
-  height: fit-content;
-  text-indent: 0;
+    display: block;
+    justify-content:start;
+    width: 100%;
+    margin-bottom: 5rem;
+    height: fit-content;
+    text-indent: 0;
+
 }
 
 .specialcase a {
