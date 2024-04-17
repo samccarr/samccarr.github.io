@@ -66,6 +66,7 @@ body {
 #homeIcon{
     padding: 0;
     transform: translateX(50%) translateY(-25%);
+    z-index: -1;
 }
 .homeword div {
     padding-right: 15%;
@@ -238,12 +239,12 @@ h3 {
     width: 50rem;
 }
 .source-list {
-    display: flex;
-    flex-direction: column;
+    display: block;
     justify-content:start;
     width: 100%;
     margin-bottom: 5rem;
     height: fit-content;
+    text-indent: 0;
 }
 .specialcase a {
     justify-content: left;
