@@ -67,7 +67,7 @@ body {
 }
 #homeIcon {
   padding: 0;
-  transform: translateX(50%) translateY(-25%);
+  transform: translateX(65%) translateY(-25%);
 }
 .homeword div {
   padding-right: 15%;
