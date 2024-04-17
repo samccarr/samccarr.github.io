@@ -223,7 +223,9 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-
+#resourcesHeader.underlined-text::after{
+    background-color: var(--bar-secondary); 
+}
 /*source page styling*/
 .sourcesListWrapper,.sourceListConfiner{
     display: flex;
@@ -232,8 +234,8 @@ h3 {
     align-items: center;
 }
 .sourceListConfiner{
-    width: 75rem;
-    white-space: wrap;
+    min-width: 70vw;
+    width: 50rem;
 }
 .source-list {
     display: flex;
