@@ -309,18 +309,20 @@ p {
   justify-content: center;
   align-items: center;
 }
-.sourceListConfiner {
-  min-width: 70vw;
-  width: 50rem;
+.sourceListConfiner{
+    min-width: 70vw;
+    width: 50rem;
+    border-radius: 1rem;
+    background-color: #ffffff10;
 }
 .source-list {
     display: block;
     justify-content:start;
-    width: 100%;
+    width: 90%;
     margin-bottom: 5rem;
     height: fit-content;
     text-indent: 0;
-
+    padding-right: 3rem;
 }
 
 .specialcase a {
