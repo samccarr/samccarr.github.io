@@ -1,37 +1,46 @@
+
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-  </head>
-  <body>
-    <div class="navbar">
-        <div class="navItem">
-            <img id="homeIcon" class="nav-icon" src="Assets/home.png">
-            <a href="index.html">Home</a>
-        </div>
-        <div class="navItem">
-            <img class="nav-icon" src="Assets/location_pin.png">
-            <a id="underlined" href="map.html">Map</a>
-        </div>
-        <div class="navItem">
-            <a href="form.html">Form</a>
-        </div>
-        <div class="navItem">
-            <img class="nav-icon" src="Assets/leaf.png">
-            <a href="sources.html">Resources</a>
-        </div>
-      </div>
+<head>
+  <title>Map Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <style>
+    #map { height: 400px; } /* Adjust height as necessary */
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navItem">
+        <img id="homeIcon" class="nav-icon" src="Assets/home.png">
+        <a href="index.html">Home</a>
     </div>
-    
-    <div id="map"></div>
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    <div class="navItem">
+        <img class="nav-icon" src="Assets/location_pin.png">
+        <a id="underlined" href="map.html">Map</a>
+    </div>
+    <div class="navItem">
+        <a href="form.html">Form</a>
+    </div>
+    <div class="navItem">
+        <img class="nav-icon" src="Assets/leaf.png">
+        <a href="sources.html">Resources</a>
+    </div>
+  </div>
+  </div>
 
+  <div id="map"></div>
+
+  <script>
+    var map = L.map('map').setView([51.505, -0.09], 13); // Use your desired coordinates
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+  </script>
         <div class="mapAndFAQ">
             <div class="mapContent">
             </div>
