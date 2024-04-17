@@ -8,6 +8,8 @@
   --navbar-icon-size: 2rem;
   --bar-color: #007f00;
   --bar-secondary: rgba(173, 235, 255, 0.59);
+  --bar-thirdly: #568C3F;
+  --bar-formback: #b6d7e0;
   --header-font: "Urbanist", Inter, sans-serif;
   --header-font-weight: 600;
 }
@@ -163,6 +165,25 @@ p {
   margin-bottom: -5.4%;
 }
 
+/*home page about section underline */
+.about-underline {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.about-underline::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 5px;
+  background-color: var(--bar-thirdly);
+  margin: auto;
+  margin-top: 0.4rem;
+  border-radius: 2px;
+  left: 15%;
+}
+
 .underlined-text {
   position: relative;
   display: inline-block;
@@ -171,9 +192,9 @@ p {
 .underlined-text::after {
   content: "";
   display: block;
-  width: 95%;
-  height: 4px;
-  background-color: var(--bar-color);
+  width: 99%;
+  height: 5px;
+  background-color: var(--bar-thirdly);
   margin: auto;
   margin-top: 0.5rem;
   border-radius: 2px;
@@ -198,52 +219,87 @@ h2 {
   margin-top: 1rem;
 }
 
+
+/*for the home page only*/
 .title div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: relative;
 }
 
 /*for the home page only*/
 .title {
-  color: var(--text-color);
-  font-family: var(--header-font);
-  font-weight: 550;
-  font-size: 2rem;
-  text-align: left;
-  margin-right: 10rem;
-  margin-left: 5.5rem;
-  padding-right: 45rem;
-  padding-left: 36.7rem;
-  padding-top: 1rem;
-  padding-bottom: 0rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
-  width: 40%;
+    color: var(--text-color);
+    font-family: var(--header-font);
+    font-weight: 550;
+    text-align: left;
+    margin-right: 10rem;
+    margin-left: 5.5rem;
+    padding-right: 45rem;
+    padding-left: 36.7rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    margin-top: 1.5rem;
+    margin-bottom:0rem;
+    width: 40%;
+
+
 }
 
+.titlepara {
+    display: flex;
+    color: var(--text-color);
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    width: 39%;
+    padding-left: 10rem;
+    text-indent: 2%;
+    margin-top: -1.5%;
+    margin-left: 33rem;
+    margin-right: 25rem;
+}
 /*for home page only */
 p {
-  display: flex;
-  color: var(--text-color);
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  text-align: left;
-  text-decoration: none;
-  width: 95%;
-  padding-left: 1.01rem;
-  text-indent: 2%;
-  margin-top: -2.5%;
+    display: flex;
+    color: var(--text-color);
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    width: 60%;
+    padding-left: 6rem;
+    text-indent: 3%;
+    margin-top: -2.5%;
+    margin-left: 9rem;
+    margin-right: 9rem;
+
+
 }
 
+
+/*home page only*/
 h3 {
   color: var(--text-color);
   font-family: var(--header-font);
   font-weight: 550;
   font-size: 2rem;
   text-align: left;
+}
+
+h4 {
+    color: var(--text-color);
+    font-family: var(--header-font);
+    font-weight: 550;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-left: 45%;
+    display: block;
+
 }
 
 .center-elements {
@@ -316,7 +372,7 @@ h3 {
 }
 .subHeaderBar {
   height: 5px;
-  width: 24%;
+  width: 43%;
   background-color: var(--bar-secondary);
   border-radius: 4vmin;
 }
@@ -363,7 +419,7 @@ h3 {
 }
 .formFrame {
   width: 100%;
-  background-color: #b6d7e0;
+  background-color: var(--bar-formback);
   max-width: 750px;
   height: 80vh;
 }
