@@ -12,7 +12,9 @@
     --header-font: "Urbanist", Inter, sans-serif;
     --header-font-weight: 600;
 }
+
 #map { height: 180px; }
+
 body {
     background-color: var(--background-color);
     margin: 0;
