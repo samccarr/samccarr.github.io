@@ -318,6 +318,7 @@ p {
   width: 100%;
   margin-bottom: 5rem;
   height: fit-content;
+  text-indent: 0;
 }
 
 .specialcase a {
@@ -329,8 +330,6 @@ p {
   font-family: "Urbanist", sans-serif;
   font-size: 1rem;
   white-space: wrap;
-
-  
 }
 
 .source-list a {
