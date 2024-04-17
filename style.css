@@ -232,21 +232,21 @@ h3 {
     align-items: center;
 }
 .sourceListConfiner{
-    width: 80rem;
+    width: 75rem;
+    white-space: wrap;
 }
 .source-list {
     display: flex;
     flex-direction: column;
     justify-content:start;
     width: 100%;
-    padding-left: 5%;
     margin-bottom: 5rem;
     height: fit-content;
 }
 .specialcase a {
     justify-content: left;
 }
-.source-list h2 {
+/* .source-list h2 {
     color: var(--text-color);
     font-family: 'Urbanist', sans-serif;
     font-size: 1.5rem;
@@ -261,21 +261,24 @@ h3 {
     text-align: center;
     margin-top: 1rem;
     padding-left: 1%;
-}
+} */
 #resourcesHeader:first-of-type{
     margin-bottom: 2em;
 }
 #resourcesHeader, #resourcesHeaderh3{
     margin-bottom: 4em;
+    font-size: 1.5rem;
 }
 
 .source-list p {
     color: var(--text-color);
     font-family: 'Urbanist', sans-serif;
     font-size: 1rem;
+    white-space: wrap;
 }
 .source-list a {
     color: var(--text-color);
+    white-space: wrap;
 }
 .source-list:first-of-type{
     margin-top: 1rem;
