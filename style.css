@@ -1,127 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --background-color: #2B388F;
-    --text-color: #ffffff;
-    --hover-color: #75BF56;
-    --navbar-font-size: 1.5rem;
-    --navbar-icon-size: 2.25rem;
-    --bar-color: #007f00;
-    --bar-secondary: rgba(173, 235, 255, 0.59);
-    --header-font: "Urbanist", Inter, sans-serif;
-    --header-font-weight: 600;
+  --background-color: #2b388f;
+  --text-color: #ffffff;
+  --hover-color: #75bf56;
+  --navbar-font-size: 1.5rem;
+  --navbar-icon-size: 2.25rem;
+  --bar-color: #007f00;
+  --bar-secondary: rgba(173, 235, 255, 0.59);
+  --bar-thirdly: #568c3f;
+  --bar-formback: #b6d7e0;
+  --header-font: "Urbanist", Inter, sans-serif;
+  --header-font-weight: 600;
 }
-  
+
 body {
-    background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
 }
-  
+
 .navbar a {
-    display: block;
-    color: var(--text-color);
-    font-family: 'Inter', sans-serif;
-    font-size: var(--navbar-font-size);
-    text-align: center;
-    text-decoration: none;
-    
+  display: block;
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  font-size: var(--navbar-font-size);
+  text-align: center;
+  text-decoration: none;
 }
-#underlined{
-    display: inline-block;
-    position: relative;
+#underlined {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
 }
-#underlined::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px; 
-    background-color: var(--bar-color);
-    left: 0;
-    transform: translateY(800%);
-    /* bottom: -5px;  */
+#underlined::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--bar-color);
+  left: 0;
+  transform: translateY(800%);
+  /* bottom: -5px;  */
 }
 .navbar div {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
 }
 
-.navItem{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.navItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-#homeIcon{
-    padding: 0;
-    transform: translateX(50%) translateY(-25%);
+#homeIcon {
+  padding-right: 2rem;
+  padding-left: 0.9rem;
+  transform: translateX(65%) translateY(-25%);
 }
 .homeword div {
-    padding-right: 15%;
-        
-} 
+  padding-right: 15%;
+}
 
 .homeword a {
-        padding-top: 3.5%;
+  padding-top: 3.5%;
 }
 
 .title div {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: relative;
 }
-
 
 /*for the home page only*/
 .title {
-    color: var(--text-color);
-    font-family: var(--header-font);
-    font-weight: 550;
-    font-size: 2rem;
-    text-align: left;
-    margin-right: 10rem;
-    margin-left: 5.5rem;
-    padding-right: 45rem;
-    padding-left: 36.7rem;
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-    margin-top: 1.5rem;
-    margin-bottom:0rem;
-    width: 40%;
-    
-
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 550;
+  font-size: 2rem;
+  text-align: left;
+  margin-right: 10rem;
+  margin-left: 5.5rem;
+  padding-right: 45rem;
+  padding-left: 36.7rem;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+  width: 40%;
 }
 /*for home page only */
 p {
-    display: flex;
-    color: var(--text-color);
-    font-family: 'Urbanist', sans-serif;
-    font-size: 20px;
-    text-align: left;
-    text-decoration: none;
-    width: 95%;
-    padding-left: 1.01rem;
-    text-indent: 2%;
-    margin-top: -2.5%;
-
-
+  display: flex;
+  color: var(--text-color);
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+  width: 95%;
+  padding-left: 1.01rem;
+  text-indent: 2%;
+  margin-top: -2.5%;
 }
 
 .navbar a:hover {
-    color: var(--hover-color);
+  color: var(--hover-color);
 }
 /* keeping incase :)
 .navbar .current-page::after {
@@ -141,225 +138,284 @@ p {
 
 /* Styles for the active link */
 .navbar a.current-page {
-    /* Styles for the active link text (e.g., color, font-weight) */
-    color: var(--hover-color); /* change color of active link */
+  /* Styles for the active link text (e.g., color, font-weight) */
+  color: var(--hover-color); /* change color of active link */
 }
 
 /* new styles for the active underline indicator */
 .active-indicator {
-    position: absolute;
-    bottom: 0; 
-    left: 0; 
-    height: 4px;
-    background-color: var(--bar-color); /* primary bar color */
-    /* transition: left 0.3s ease, width 0.3s ease; Smooth transition *//* This destroyed my head to look at */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: var(--bar-color); /* primary bar color */
+  /* transition: left 0.3s ease, width 0.3s ease; Smooth transition */ /* This destroyed my head to look at */
 }
-
 
 .nav-icon {
-    height: var(--navbar-icon-size);
-    padding-right: .9rem; 
-    padding-left: 2rem;
-    /* margin-right: 0.3rem;
-    margin-left: 0rem;
-    margin-bottom: -10%; */
+  height: var(--navbar-icon-size);
+  padding-right: 1rem;
+  padding-left: 0.9rem;
 }
 
-/* Home Icon */
-.home-icon {
-    height: 2em;
-    padding-top: 1%; 
-    margin-left: 9.4%;
-    margin-top: 0%;
-    margin-bottom: -5.4%;
 
+
+/*home page about section underline */
+.about-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.about-underline::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 5px;
+  background-color: var(--bar-thirdly);
+  margin: auto;
+  margin-top: 0.4rem;
+  border-radius: 2px;
+  left: 15%;
 }
 
 .underlined-text {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .underlined-text::after {
-    content: '';
-    display: block;
-    width: 95%;
-    height: 4px;
-    background-color: var(--bar-color);
-    margin: auto;
-    margin-top: 0.5rem;
-    border-radius: 2px; 
-    left: 35%;
+  content: "";
+  display: block;
+  width: 95%;
+  height: 4px;
+  background-color: var(--bar-thirdly);
+  margin: auto;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  left: 35%;
 }
 
 /*First Type of font*/
 h1 {
-    color: var(--text-color);
-    font-family: '"Urbanist"', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 1rem;
-} 
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 400; 
+}
 /*Second Type of font*/
 h2 {
-    color: var(--text-color);
-    font-family: var(--header-font);
-    font-weight: 550;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 1rem;
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 550;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
+/*home page only*/
 h3 {
-    color: var(--text-color);
-    font-family: var(--header-font);
-    font-weight: 550;
-    font-size: 2rem;
-    text-align: left;
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 550;
+  font-size: 2rem;
+  text-align: left;
+}
+
+h4 {
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 550;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-left: 45%;
+  display: block;
+}
+
+/*for the home page only*/
+.title div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: relative;
+}
+
+/*for the home page only*/
+.title {
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 550;
+  text-align: left;
+  margin-right: 10rem;
+  margin-left: 5.5rem;
+  padding-right: 45rem;
+  padding-left: 36.7rem;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+  width: 40%;
+}
+
+.titlepara {
+  display: flex;
+  color: var(--text-color);
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+  width: 39%;
+  padding-left: 10rem;
+  text-indent: 2%;
+  margin-top: -1.5%;
+  margin-left: 33rem;
+  margin-right: 25rem;
+}
+/* source pageonly */
+p {
+  display: flex;
+  color: var(--text-color);
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+  width: 60%;
+  padding-left: 6rem;
+  text-indent: .6%;
+  margin-top: -2.5%;
+  margin-left: 9rem;
+  margin-right: 9rem;
 }
 
 .center-elements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#resourcesHeader.underlined-text::after{
-    background-color: var(--bar-secondary); 
+#resourcesHeader.underlined-text::after {
+  background-color: var(--bar-secondary);
 }
 /*source page styling*/
-.sourcesListWrapper,.sourceListConfiner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.sourcesListWrapper,
+.sourceListConfiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.sourceListConfiner{
-    min-width: 70vw;
-    width: 50rem;
+.sourceListConfiner {
+  min-width: 70vw;
+  width: 50rem;
 }
 .source-list {
-    display: flex;
-    flex-direction: column;
-    justify-content:start;
-    width: 100%;
-    margin-bottom: 5rem;
-    height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  margin-bottom: 5rem;
+  height: fit-content;
 }
+
 .specialcase a {
-    justify-content: left;
-}
-/* .source-list h2 {
-    color: var(--text-color);
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 2rem;
-    padding-left: 20%;
-}
-.source-list h3 {
-    color: var(--text-color);
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 1rem;
-    padding-left: 1%;
-} */
-#resourcesHeader:first-of-type{
-    margin-bottom: 2em;
-}
-#resourcesHeader, #resourcesHeaderh3{
-    margin-bottom: 4em;
-    font-size: 1.5rem;
+  justify-self: left; 
 }
 
 .source-list p {
-    color: var(--text-color);
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1rem;
-    white-space: wrap;
+  color: var(--text-color);
+  font-family: "Urbanist", sans-serif;
+  font-size: 1rem;
+  white-space: wrap;
+
+  
 }
+
 .source-list a {
-    color: var(--text-color);
-    white-space: wrap;
-}
-.source-list:first-of-type{
-    margin-top: 1rem;
+  color: var(--text-color);
+  white-space: wrap;
 }
 /*Map styles*/
 
-.faqHeader{
-    width: fit-content;
-    font-family: var(--header-font);
-    font-weight: var(--header-font-weight);
-    line-height: .5rem;
-    font-size: 1.8rem;
-    margin-top: 1rem;
+.faqHeader {
+  width: fit-content;
+  font-family: var(--header-font);
+  font-weight: var(--header-font-weight);
+  line-height: 0.5rem;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
-.faqSubHeader{
-    font-size: 1.4rem;
-    font-family: var(--header-font);
-    margin-bottom: .1rem;
-    margin-top: -7.5rem;
+.faqSubHeader {
+  font-size: 1.4rem;
+  font-family: var(--header-font);
+  margin-bottom: .1rem;
+  margin-top: -7.5rem;
 }
-.faqUnderline{
-    height: 5px;
-    width: 100%;
-    background-color: var(--bar-color);
-    border-radius: 4vmin;
+.faqUnderline {
+  height: 5px;
+  width: 100%;
+  background-color: var(--bar-thirdly);
+  border-radius: 4vmin;
 }
-.subHeaderBar{
-    height: 5px;
-    width: 24%;
-    background-color: var(--bar-secondary);
-    border-radius: 4vmin;
+.subHeaderBar {
+  height: 5px;
+  width: 30%;
+  background-color: var(--bar-secondary);
+  border-radius: 4vmin;
 }
-.mapAndFAQ, .mapContent, .faq, .faqBottomSection, .faqBottomSegment{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-     
-  
-}
-.faqBottomSection{
-    width: fit-content;
-    margin: 9rem;
-    padding: 9rem;
-    margin-top: 0.5vh;
-    margin-bottom: -10rem;
 
-   
+.mapAndFAQ,
+.mapContent,
+.faq,
+.faqBottomSection,
+.faqBottomSegment {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.subHeaderContent{
-    font-family: 'Urbanist', sans-serif;
-    font-weight: medium;
-    color: var(--text-color);
-    text-indent: 2.5%; 
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    margin-bottom: 0.25rem;
-    margin-top: 0.5rem;
-    padding-right: 100px;
-    padding-left: 100px;
+
+.faqBottomSection {
+  width: fit-content;
+  margin: 4rem;
+  padding: 4rem;
+  margin-top: 15vh;
+  margin-bottom: -0.3rem;
+}
+
+.subHeaderContent {
+  font-family: "Urbanist", sans-serif;
+  font-weight: medium;
+  color: var(--text-color);
+  text-indent: 2.5%;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0.5rem;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 /*End of map styles*/
 
 /* Start of Form Styles*/
 
-.formWrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+.formWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
-.formFrame{
-    border-radius: 3vmin;
-    width: 100%;
-    background-color: #b6d7e0;
-    max-width: 750px;
-    height: 85vh;
-    min-height: 20rem;
+.formFrame {
+  border-radius: 3vmin;
+  width: 100%;
+  background-color: #b6d7e0;
+  max-width: 750px;
+  height: 80vh;
+  min-height: 20rem;
 }
 /* End of Form Styles*/
