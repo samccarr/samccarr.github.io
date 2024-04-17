@@ -351,9 +351,11 @@ h3 {
     height: auto;
 }
 .formFrame{
+    border-radius: 3vmin;
     width: 100%;
     background-color: #b6d7e0;
     max-width: 750px;
-    height: 80vh;
+    height: 85vh;
+    min-height: 20rem;
 }
 /* End of Form Styles*/
