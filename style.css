@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 :root {
     --background-color: #2B388F;
     --text-color: #ffffff;
@@ -11,7 +12,7 @@
     --header-font: "Urbanist", Inter, sans-serif;
     --header-font-weight: 600;
 }
-  
+#map { height: 180px; }
 body {
     background-color: var(--background-color);
     margin: 0;
