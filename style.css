@@ -276,6 +276,7 @@ h4 {
   margin-top: -1.5%;
   margin-left: 33rem;
   margin-right: 25rem;
+  z-index: 2;
 }
 /* source pageonly */
 p {
@@ -420,3 +421,30 @@ p {
   min-height: 20rem;
 }
 /* End of Form Styles*/
+
+
+/* Home page circles */
+.circle1 {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background-color: #2E7012;
+    z-index: 1;
+    border-radius: 50%
+}
+.circle2 {
+    transform: translate(12.5%, 12.5%);
+    width: 700px;
+    height: 700px;
+    background-color: #568C3F;
+    z-index: 1;
+    border-radius: 50%
+}
+.circle3 {
+    transform: translate(17%, 17%);
+    width: 600px;
+    height: 600px;
+    background-color: #ADEBFF;
+    z-index: 1;
+    border-radius: 50%
+}
