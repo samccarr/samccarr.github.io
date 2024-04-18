@@ -1,205 +1,491 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 :root {
-    --background-color: #2B388F;
-    --text-color: #ffffff;
-    --hover-color: #75BF56;
-    --navbar-font-size: 1.5rem;
-    --navbar-icon-size: 2rem;
-    --bar-color: #007f00;
-    --bar-secondary: rgba(173, 235, 255, 0.59);
-    --header-font: "Urbanist", Inter, sans-serif;
-    --header-font-weight: 600;
+  --background-color: #2b388f;
+  --text-color: #ffffff;
+  --hover-color: #75bf56;
+  --navbar-font-size: 1.5rem;
+  --navbar-icon-size: 2.25rem;
+  --bar-color: #007f00;
+  --bar-secondary: rgba(173, 235, 255, 0.59);
+  --bar-thirdly: #568c3f;
+  --bar-formback: #b6d7e0;
+  --header-font: "Urbanist", Inter, sans-serif;
+  --header-font-weight: 600;
 }
-  
+
 body {
-    background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem;
-}
-  
-.navbar a {
-    display: block;
-    color: var(--text-color);
-    font-family: 'Inter', sans-serif;
-    font-size: var(--navbar-font-size);
-    text-align: center;
-    text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
 }
 
-.navbar div {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
+.navbar a {
+  display: block;
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  font-size: var(--navbar-font-size);
+  text-align: center;
+  text-decoration: none;
 }
+#underlined {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+}
+#underlined::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--bar-color);
+  left: 0;
+  transform: translateY(800%);
+  /* bottom: -5px;  */
+}
+.navbar div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#homeIcon {
+  padding-right: 2rem;
+  padding-left: 0.9rem;
+  transform: translateX(65%) translateY(-25%);
+  z-index: -1;
+}
+.homeword div {
+  padding-right: 15%;
+}
+
+.homeword a {
+  padding-top: 3.5%;
+}
+
+.title div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: relative;
+}
+
+
 
 .navbar a:hover {
-    color: var(--hover-color);
+  color: var(--hover-color);
 }
-
+/* keeping incase :)
 .navbar .current-page::after {
     content: '';
     display: block;
-    width: 25%;
+    width: 5%;
     height: 4px;
     background-color: var(--bar-color);
     margin: auto;
     border-radius: 2px;
     position: absolute;
     bottom: -0.5rem;
-    left: 50%;
+    left: 10%;
     transform: translateX(-40%);
+}
+*/
+
+/* Styles for the active link */
+.navbar a.current-page {
+  /* Styles for the active link text (e.g., color, font-weight) */
+  color: var(--hover-color); /* change color of active link */
+}
+
+/* new styles for the active underline indicator */
+.active-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: var(--bar-color); /* primary bar color */
+  /* transition: left 0.3s ease, width 0.3s ease; Smooth transition */ /* This destroyed my head to look at */
 }
 
 .nav-icon {
-    height: var(--navbar-icon-size);
-    padding-right: 0.5rem;
+  height: var(--navbar-icon-size);
+  padding-right: 1rem;
+  padding-left: 0.9rem;
 }
 
-/* Home Icon */
-.home-icon {
-    height: var(--navbar-icon-size);
-    padding-right: 0.1rem;
+
+
+/*home page about section underline */
+.about-underline {
+  position: relative;
+  display: inline-block;
 }
-.home-word {
-    height: 100px;
-    padding-right:10rem;
-    
+
+.about-underline::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 5px;
+  background-color: var(--bar-thirdly);
+  margin: auto;
+  margin-top: 0.4rem;
+  border-radius: 2px;
+  left: 15%;
 }
 
 .underlined-text {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .underlined-text::after {
-    content: '';
-    display: block;
-    width: 20%;
-    height: 4px;
-    background-color: var(--bar-color);
-    margin: auto;
-    margin-top: 0.5rem;
-    border-radius: 2px;
+  content: "";
+  display: block;
+  width: 95%;
+  height: 4px;
+  background-color: var(--bar-thirdly);
+  margin: auto;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  left: 35%;
 }
 
 /*First Type of font*/
 h1 {
-    color: var(--text-color);
-    font-family: '"Urbanist"', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 2rem;
-} 
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 400; 
+}
 /*Second Type of font*/
 h2 {
-    color: var(--text-color);
-    font-family: var(--header-font);
-    font-weight: 550;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 2rem;
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 550;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/*home page only*/
+h3 {
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 550;
+  font-size: 2rem;
+  text-align: left;
+  text-align: center;
+}
+
+h4 {
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 550;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+h4.about-underline:first-of-type{
+  margin-top: 7rem;
+}
+p.text:last-of-type{
+  margin-bottom: 7rem;
+}
+h4.about-underline{
+  text-align: center;
+  width: 70%;
+}
+.homeBottom{
+  margin-top: 5rem;
+}
+.homeBottom, .homeBottomWrapper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homeBottomWrapper .text{
+  width: 70%;
+  font-size: 2rem;
+}
+
+/*for the home page only*/
+/* .title div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: relative;
+} */
+
+.paragraphBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 45%;
+  padding-right: 5%;
+}
+.titlepara {
+  display: flex;
+  color: var(--text-color);
+  font-family: "Urbanist", sans-serif;
+  font-size: 2rem;
+  text-align: left;
+  text-decoration: none;
+  width: 80%;
+}
+.title .underlined-text{
+  text-align: center;
+  width: 100%;
+}
+/*for the home page only*/
+.title{
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 550;
+  margin-top: 1.5rem;
+  /* margin-right: 10rem;
+  margin-left: 5.5rem;
+  padding-right: 45rem;
+  padding-left: 36.7rem;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+
+  margin-bottom: 0rem; */
+  width: 80%;
+}
+.circleTextWrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.circleWrap{
+  padding-left: 10%;
+  max-width: 40%;
+}
+.circle1 {
+    position: relative;
+    top: 300%;
+    transform: translateY(-290%) scale(110%);
+    border-radius: 50%;
+    z-index: -1;
+    width: 800px;
+    max-width: 50vw;
+    max-height: 50vw;
+    height: 800px;
+    background-color: #2E7012;
+}
+.circle2 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+    width: 85%;
+    height: 85%;
+    background-color: #568C3F;
+}
+.circle3 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+    width: 70%;
+    height: 70%;
+    background-color: #ADEBFF;
+}
+
+.car {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+/* source pageonly */
+p {
+  display: flex;
+  color: var(--text-color);
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
 }
 
 .center-elements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+#resourcesHeader.underlined-text::after {
+  background-color: var(--bar-secondary);
+}
+/*source page styling*/
+.sourcesListWrapper,
+.sourceListConfiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sourceListConfiner{
+    min-width: 70vw;
+    width: 50rem;
+    border-radius: 1rem;
+    background-color: #ffffff10;
+}
 .source-list {
-    width: 75%;
-    margin: auto;
+    display: block;
+    justify-content:start;
+    width: 90%;
+    margin-bottom: 5rem;
+    height: fit-content;
+    text-indent: 0;
+    padding-right: 3rem;
 }
 
-.source-list h2 {
-    color: var(--text-color);
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 2rem;
+.specialcase a {
+  justify-self: left; 
 }
 
 .source-list p {
-    color: var(--text-color);
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1rem;
-    margin-top: 1rem;
+  color: var(--text-color);
+  font-family: "Urbanist", sans-serif;
+  font-size: 1rem;
+  white-space: wrap;
 }
 
 .source-list a {
-    color: var(--text-color);
+  color: var(--text-color);
+  white-space: wrap;
 }
 /*Map styles*/
 
-.faqHeader{
-    width: fit-content;
-    font-family: var(--header-font);
-    font-weight: var(--header-font-weight);
-    line-height: .5rem;
+.faqHeader {
+  width: fit-content;
+  font-family: var(--header-font);
+  font-weight: var(--header-font-weight);
+  line-height: 0.5rem;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
-.faqSubHeader{
-    font-size: 1.6rem;
-    font-family: var(--header-font);
-    margin-bottom: .5rem;
+.faqSubHeader {
+  font-size: 1.4rem;
+  font-family: var(--header-font);
+  margin-bottom: .1rem;
+  margin-top: -7.5rem;
 }
-.faqUnderline{
-    height: 10px;
-    width: 100%;
-    background-color: var(--bar-color);
-    border-radius: 8vmin;
+.faqUnderline {
+  height: 5px;
+  width: 100%;
+  background-color: var(--bar-thirdly);
+  border-radius: 4vmin;
 }
-.subHeaderBar{
-    height: 10px;
-    width: 25%;
-    background-color: var(--bar-secondary);
-    border-radius: 8vmin;
+.subHeaderBar {
+  height: 5px;
+  width: 30%;
+  background-color: var(--bar-secondary);
+  border-radius: 4vmin;
 }
-.mapAndFAQ, .mapContent, .faq, .faqBottomSection, .faqBottomSegment{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-indent: 5%;
-    padding: 80%;
-    margin: 50%;
+
+.mapAndFAQ,
+.mapContent,
+.faq,
+.faqBottomSection,
+.faqBottomSegment {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.faqBottomSection{
-    width: fit-content;
-    margin-bottom: 2vh;
-   
+
+.faqBottomSection {
+  width: fit-content;
+  margin: 4rem;
+  padding: 4rem;
+  margin-top: 15vh;
+  margin-bottom: -0.3rem;
 }
-.subHeaderContent{
-    font-family: 'Urbanist', sans-serif;
-    font-weight: medium;
-    color: var(--text-color);
-    max-width: 15%; 
-    margin-bottom: 1vh;
+
+.subHeaderContent {
+  font-family: "Urbanist", sans-serif;
+  font-weight: medium;
+  color: var(--text-color);
+  text-indent: 2.5%;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0.5rem;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 /*End of map styles*/
 
 /* Start of Form Styles*/
 
-.formWrapper{
-    display: flex;
+.formWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.formFrame {
+  border-radius: 3vmin;
+  width: 100%;
+  background-color: #b6d7e0;
+  max-width: 750px;
+  height: 80vh;
+  min-height: 20rem;
+}
+
+@media(max-width: 1900px){
+  .circle1{
+    transform: translateY(-305%) scale(90%);
+  }
+  .circleWrap{
+    padding-left: 5%;
+    max-width: 40%;
+  }
+}
+@media(max-width: 1250px){
+  .circleWrap, .circle1, .circle2, .circle3{
+    display: none;
+  }
+  .paragraphBlock{
+    width: 100%;
+    padding: 0;
     align-items: center;
+  }
+  .circleTextWrap{
     justify-content: center;
-    width: 100%;
-    height: auto;
+    align-items: center;
+  }
 }
-.formFrame{
-    width: 100%;
-    background-color: #007f00;
-    max-width: 750px;
-    height: 80vh;
-}
-/* End of Form Styles*/
