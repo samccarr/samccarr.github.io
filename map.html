@@ -18,22 +18,22 @@
 </head>
 <body>
   <div class="navbar">
-    <div class="navItem">
-        <img id="homeIcon" class="nav-icon" src="Assets/home.png">
-        <a href="index.html">Home</a>
-    </div>
-    <div class="navItem">
-        <img class="nav-icon" src="Assets/location_pin.png">
-        <a id="underlined" href="map.html">Map</a>
-    </div>
-    <div class="navItem">
-        <a href="form.html">Form</a>
-    </div>
-    <div class="navItem">
-        <img class="nav-icon" src="Assets/leaf.png">
-        <a href="sources.html">Resources</a>
-    </div>
-  </div>
+        <div class="navItem">
+            <img id="homeIcon" class="nav-icon" src="Assets/home.png">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="navItem">
+            <img class="nav-icon" src="Assets/location_pin.png">
+            <a id="underlined" href="map.html">Map</a>
+        </div>
+        <div class="navItem">
+            <img class="nav-icon" src="Assets/form.png">
+            <a href="form.html">Form</a>
+        </div>
+        <div class="navItem">
+            <img class="nav-icon" src="Assets/leaf.png">
+            <a href="sources.html">Resources</a>
+        </div>
   </div>
 
   <div id="map"></div>
@@ -154,41 +154,80 @@ map.fitBounds(polyline.getBounds());
                     <h2 class="faqSubHeader">How do electric vehicles work?</h2>
                     <div class="subHeaderBar"></div>
                     <p class="subHeaderContent">
-                              Instead of gasoline for combustion-based engines as is in normal cars, electric vehicles rely on battery packs set in series to energize and therefore run the motors that move the car. 
-                        There are multiple batteries that are used in electric vehicles, such as lithium-ion, Nickel-Metal Hydride, and Lead-Acid, the most common of which is lithium-ion. 
-                        The main components of the batteries that are used in electric vehicles, such as the lithium-ion battery include the negatively charged anode,  
-                        a positively charged cathode, a metal oxide (such as lithium-cobalt oxide (LiCoO2)), an electrolyte, a separator, and a carbon based compound (usually graphite electrode). 
-                        To charge the battery, when a power source is connected, lithium ions at the cathode are pulled towards it and move to the anode where the graphite 
-                        intercalation compound ( like LiC6) is oxidized, forming lithium ions and graphite.
+                        Unlike gas-powered cars that use combustion based engines, electric vehicles rely on battery packs to energize and run the motors that move the car. 
+                        There are multiple batteries that are used in electric vehicles such as lithium-ion, Nickel-Metal Hydride, and Lead-Acid, the most common of which is lithium-ion.
                     </p> 
                     <p class="subHeaderContent"> 
-                          These positively charged lithium ions are then attracted to the anode and move through the electrolyte and separator layers to become trapped in the graphite. 
-                        To discharge the battery, when the power source is removed and a load is introduced, the lithium ions (wanting to be more stable) return to the cathode where an 
-                        oxidation reaction occurs between lithium and cobalt-oxide, forming lithium cobalt oxide. The electrons (being attracted to the positive charge) move through the 
-                        load back to the cathode. The overall chemical reaction is reversible as shown and represented by the equation LiC6 + CoO2 ⇆ C6 + LiCoO2 for lithium-ion batteries 
-                        specifically however it is generally similar for other batteries as well.
+                        The main components of the batteries used in electric vehicles include a negatively charged anode,  a positively charged cathode, a metal oxide (such as lithium-cobalt 
+                        oxide (LiCoO2)), an electrolyte, a separator, and a carbon based compound (usually graphite electrode). 
+                     </p>  
+                     <p class ="subHeaderContent">
+                        To charge the battery,a power source must be connected. Then lithium ions at the cathode are pulled towards 
+                        it and move to the anode where the graphite intercalation compound ( like LiC6) is oxidized, forming lithium 
+                        ions and graphite. 
+                     </p>
+                    <p class="subHeaderContent"> 
+                        These positively charged lithium ions are then attracted to the anode and move through 
+                        the electrolyte and separator layers to become trapped in the graphite. 
+                    </p>
+                    <p class = "subHeaderContent">
+                        To discharge the battery, the power source is removed and a load is introduced, the lithium ions 
+                        (wanting to be more stable) return to the cathode where an oxidation reaction occurs between lithium and 
+                        cobalt-oxide, forming lithium cobalt oxide. The electrons (being attracted to the positive charge) move 
+                        through the load back to the cathode.
                     </p>
                 </div>
                 <div class="faqBottomSection">
                     <h2 class="faqSubHeader">Does it work in cold weather?</h2>
                     <div class="subHeaderBar"></div>
                     <p class="subHeaderContent">
-                        Yes it does! Since electricity comes from the transfer of electrons, the amount of electricity and therefore power is directly dependent on the ability and 
-                        speed at which the electrons can be transferred. Electrons are temperature-sensitive which, in this case, means that at lower temperatures the electrons move 
-                        slower and at higher temperatures faster. 
+                        Yes it does! Since electricity comes from the transfer of electrons, the amount of electricity 
+                        and therefore power is directly dependent on the ability and speed at which the electrons can be transferred. 
+                    </p>
+                    <p class="subHeaderContent"> 
+                        Electrons are temperature-sensitive which, in this case, means that at lower temperatures the electrons move slower which negatively affects the output of the battery and causes many complications. 
+                        Because of this, battery power must be used to keep batteries warm, as well as warming the cab of the vehicle.
+                    </p>
+                    <p class = "subHeaderContent">
+                        Gasoline powered vehicles generate heat from the burning of fuel when they run, and this waste 
+                        heat can be redirected to warm the cab. Battery powered vehicles do not generate heat while running. 
+                        Heating accounts for most of the battery drain in cold weather, and, on average, decreases overall travel 
+                        range by 25%. 
+                    </p>
+                    <p class = "subHeaderContent">
+                        At low temperatures, the mobility of ions within batteries is also impeded due to slower general movement 
+                        of ions as well as increased viscosity of the electrolyte from freezing. This sluggish ion movement manifests
+                        at slower charging and discharging rates, which not only affects the immediate performance of the battery but 
+                        also contributes to its gradual deterioration over time. 
+                    </p>
+                    <p class = "subHeaderContent">
+                        Additionally, the occurrence of lithium plating becomes more pronounced under these conditions, where excess 
+                        lithium accumulates in the battery rather than being efficiently utilized, leading to diminished overall battery 
+                        efficiency and the formation of dendrites which could puncture the separator, potentially causing a short circuit 
+                        and further compromising the battery's integrity.
                     </p>
                 </div>
                 <div class="faqBottomSection">
                     <h2 class="faqSubHeader">Are there any consequences?</h2>
                     <div class="subHeaderBar"></div>
                     <p class="subHeaderContent">
-                        As explained before, the deintercalation, or the removal of lithium (or other substitute) from the carbon based lattice (usually graphite),
-                        is greatly affected by lower temperatures. The deintercalation or desolvation step, which occurs during the charging process,
-                        has been found to be the rate limiting step of the electrochemical reaction or the slowest step that determines the overall rate of the reaction. 
-                        The reason it is the rate limiting step is because it has the highest activation barrier meaning that, in order for the step to occur, 
-                        it has to receive the most amount of energy so that it can get over that barrier. In cold weather conditions, the activation barrier becomes 
-                        much higher which means that in order to charge the EV battery, it requires a lot more energy than usual to even get the reaction to start that would begin the charging. 
-                        This not only makes the battery much harder to charge but also the “overcharging” that has to occur to pass the barrier, negatively impacts the performance of the batteries.
+                        The intercalation, or the integration of lithium (or other substitute) ions 
+                        into the carbon based lattice (usually graphite), is greatly affected by lower temperatures.  
+                        The intercalation and desolvation steps, which occur during the charging process, have been 
+                        found to be the rate limiting step of the electrochemical reaction or the slowest step that 
+                        determines the overall rate of the reaction.
+                    </p>
+                    <p class="subHeaderContent">
+                        The reason it is the rate limiting step is because it has the highest activation barrier meaning 
+                        that, in order for the step to occur, it has to receive the most amount of energy so that it can 
+                        get over that barrier. 
+                    </p>
+                    <p class="subHeaderContent">
+                        In cold weather conditions, the activation barrier becomes much higher which 
+                        means that in order to charge the EV battery, it requires a lot more energy than usual to even get 
+                        the reaction to happen that would charge the battery. This not only makes the battery much harder to 
+                        charge but also the “overcharging” that has to occur to pass the barrier, negatively impacts the 
+                        performance of the batteries.
                     </p>
                 </div>
             </div>
