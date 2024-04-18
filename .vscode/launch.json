@@ -15,7 +15,7 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "file:///C:/Users/girlw/OneDrive/Documents/samccarr.github.io/",
+            "url": "https://samccarr.github.io/",
             "webRoot": "${workspaceFolder}"
         },
         {
