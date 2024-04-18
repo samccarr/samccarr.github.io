@@ -89,36 +89,7 @@ body {
   position: relative;
 }
 
-/*for the home page only*/
-.title {
-  color: var(--text-color);
-  font-family: var(--header-font);
-  font-weight: 550;
-  font-size: 2rem;
-  text-align: left;
-  margin-right: 10rem;
-  margin-left: 5.5rem;
-  padding-right: 45rem;
-  padding-left: 36.7rem;
-  padding-top: 1rem;
-  padding-bottom: 0rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
-  width: 40%;
-}
-/*for home page only */
-p {
-  display: flex;
-  color: var(--text-color);
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  text-align: left;
-  text-decoration: none;
-  width: 95%;
-  padding-left: 1.01rem;
-  text-indent: 2%;
-  margin-top: -2.5%;
-}
+
 
 .navbar a:hover {
   color: var(--hover-color);
@@ -239,31 +210,19 @@ h4 {
 }
 
 /*for the home page only*/
-.title div {
+/* .title div {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: left;
   position: relative;
-}
+} */
 
-/*for the home page only*/
-.title {
-  color: var(--text-color);
-  font-family: var(--header-font);
-  font-weight: 550;
-  text-align: left;
-  margin-right: 10rem;
-  margin-left: 5.5rem;
-  padding-right: 45rem;
-  padding-left: 36.7rem;
-  padding-top: 1rem;
-  padding-bottom: 0rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
-  width: 40%;
+.paragraphBlock{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
-
 .titlepara {
   display: flex;
   color: var(--text-color);
@@ -271,27 +230,85 @@ h4 {
   font-size: 20px;
   text-align: left;
   text-decoration: none;
-  width: 39%;
-  padding-left: 10rem;
+  width: 80%;
   text-indent: 2%;
-  margin-top: -1.5%;
-  margin-left: 33rem;
-  margin-right: 25rem;
 }
+.title .underlined-text{
+  text-align: center;
+  width: 100%;
+}
+/*for the home page only*/
+.title{
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 550;
+  margin-top: 1.5rem;
+  /* margin-right: 10rem;
+  margin-left: 5.5rem;
+  padding-right: 45rem;
+  padding-left: 36.7rem;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+
+  margin-bottom: 0rem; */
+  width: 80%;
+}
+.circleTextWrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.circleWrap{
+  width: 800px;
+}
+.circle1 {
+    position: relative;
+    top: 300%;
+    transform: translate(30%, -290%) scale(110%);
+    border-radius: 50%;
+    z-index: -1;
+    width: 800px;
+    height: 800px;
+    background-color: #2E7012;
+}
+.circle2 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+    width: 675px;
+    height: 675px;
+    background-color: #568C3F;
+}
+.circle3 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+    width: 550px;
+    height: 550px;
+    background-color: #ADEBFF;
+}
+
+.car {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
 /* source pageonly */
 p {
   display: flex;
   color: var(--text-color);
   font-family: "Urbanist", sans-serif;
   font-size: 20px;
-  text-align: left;
-  text-decoration: none;
-  width: 60%;
-  padding-left: 6rem;
-  text-indent: .6%;
-  margin-top: -2.5%;
-  margin-left: 9rem;
-  margin-right: 9rem;
 }
 
 .center-elements {
@@ -423,3 +440,75 @@ p {
   min-height: 20rem;
 }
 /* End of Form Styles*/
+
+
+/* Home page circles */
+/*
+.circle1, .circle2, .cricle3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%
+    z-index: -1;
+}
+
+.circle1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%
+    z-index: -1;
+    width: 800px;
+    height: 800px;
+    background-color: #2E7012;
+}
+.circle2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%
+    z-index: -1;
+    width: 700px;
+    height: 700px;
+    background-color: #568C3F;
+}
+.circle3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%
+    z-index: -1;
+    width: 600px;
+    height: 600px;
+    background-color: #ADEBFF;
+}
+/*
+.circle1 {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background-color: #2E7012;
+    z-index: -1;
+    border-radius: 50%
+}
+.circle2 {
+    transform: translate(12.5%, 12.5%);
+    width: 700px;
+    height: 700px;
+    background-color: #568C3F;
+    z-index: -1;
+    border-radius: 50%
+}
+.circle3 {
+    transform: translate(17%, 17%);
+    width: 600px;
+    height: 600px;
+    background-color: #ADEBFF;
+    z-index: -1;
+    border-radius: 50%
+}
+*/
