@@ -9,7 +9,11 @@
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
   crossorigin=""/>
   <style>
-    #map { height: 400px; } /* Adjust height as necessary */
+  #map {
+    height: 600px; /* Sets the height of the map. */
+    /* width: 800px; /* Sets the width of the map. Currently commented out assuming map should be dynamic */ 
+  }
+
   </style>
 </head>
 <body>
@@ -38,43 +42,56 @@
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""></script>
   <script>
-    //var map = L.map('map').setView([47.121133, -88.569418], 13); // Coordinates for Houghton
+    var deadzoneIcon = L.icon({
+  iconUrl: 'Assets/red-marker.png', // Path to red-marker icon
+  iconSize: [25, 41], // size of the icon
+  iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
+  popupAnchor: [1, -34] // point from which the popup should open relative to the iconAnchor
+});
+
+var nonDeadzoneIcon = L.icon({
+  iconUrl: 'Assets/green-marker.png', // Path to green-marker icon
+  iconSize: [25, 41], // size of the icon
+  iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
+  popupAnchor: [1, -34] // point from which the popup should open relative to the iconAnchor
+});
+
     // array of locations:
+    
 var chargingStations = [
-{name: "The Mariner North", lat: 47.468000, lng: -87.888600, type: "4 level 2, 1 dc fast"},
-{name: 	"The Mariner North", 	lat: 	47.468	, lng: 	-87.8886	, type: "	4 level 2, 	1 dc fast	"},
-{name: 	"Keweenah Mountain Lodge", 	lat: 	47.46	, lng: 	-87.916	, type: "	1 level 2		"},
-{name: 	"Keweenah Coffee Works", 	lat: 	47.2477	, lng: 	-88.45259	, type: "	1 level 2		"},
-{name: 	"Public Parking", 	lat: 	47.120384	, lng: 	-88.5456896	, type: "		1 dc fast	"},
-{name: 	"Dial Help", 	lat: 	47.1216568	, lng: 	-88.5663015	, type: "		1 dc fast	"},
-{name: 	"Parking", 	lat: 	47.1216568	, lng: 	-88.5663015	, type: "	4 level 2		"},
-{name: 	"Adventure Mining Company", 	lat: 	47.1216568	, lng: 	-88.5663015	, type: "	4 level 2		"},
-{name: 	"L'Anse Waterfront Park	", 	lat: 	46.7576234	, lng: 	-88.4549506	, type: "	2 level 2		"},
-{name: 	"Big Valley Ford	", 	lat: 	46.5347355	, lng: 	-89.2772185	, type: "	1 level 2		"},
-{name: 	"Big Powderhorn Mountain Resort	", 	lat: 	46.484828	, lng: 	-90.083714	, type: "	2 level 2		"},
-{name: 	"Downtown Square	", 	lat: 	46.4527731	, lng: 	-90.1693976	, type: "	2 level 2		"},
-{name: 	"Active Backwoods Retreat	", 	lat: 	46.420544	, lng: 	-90.151882	, type: "	1 level 2		"},
-{name: 	"Stateline Chevrolet Buick GMC	", 	lat: 	46.0919432	, lng: 	-88.6555184	, type: "	1 level 2		"},
-{name: 	"Crystal Fresh Market & Ace Hardware	", 	lat: 	46.0971659	, lng: 	-88.3546686	, type: "		1 dc fast	"},
-{name: 	"Edwards Automotive	", 	lat: 	45.8352905	, lng: 	-88.0570515	, type: "		1 dc fast	"},
-{name: 	"NORWAY MI DC FAST EV 1	", 	lat: 	45.7865313	, lng: 	-87.907543	, type: "		1 dc fast	"},
-{name: 	"Quality Inn & Suites - Tesla Destination	", 	lat: 	47.1214022	, lng: 	-88.5589532	, type: "	3 level 2		"},
-{name: 	"Meijer - Tesla Supercharger	", 	lat: 	45.7517904	, lng: 	-87.0866318	, type: "		8 dc fast charge	"},
-{name: 	"Meijer - Tesla Supercharger	", 	lat: 	46.5531675	, lng: 	-87.4719771	, type: "		8 dc fast charge	"},
-{name: 	"Riverside Toyota in Marquette	", 	lat: 	46.5095416	, lng: 	-87.6061369	, type: "	1 level 2		"},
-{name: 	"Northern Michigan University - Northern Center	", 	lat: 	46.556695	, lng: 	-87.39642	, type: "	1 level 2		"},
-{name: 	"HOTplate Clayworks	", 	lat: 	46.5435653	, lng: 	-87.3941125	, type: "	2 level 2		"},
-{name: 	"MARQUETTE BLP STATION 1	", 	lat: 	46.545577	, lng: 	-87.380151	, type: "	2 level 2 		"},
-{name: 	"UP Motor Lodge	", 	lat: 	46.5375732	, lng: 	-87.3954681	, type: "	2 level 2 		"},
-{name: 	"Quality Inn and Suites	", 	lat: 	46.328365	, lng: 	-85.504426	, type: "	2 level 2		"},
-{name: 	"Adoba Hotel Naubinway - Tesla Destination	", 	lat: 	46.109525	, lng: 	-85.34592	, type: "	1 level 2		"},
-{name: 	"SHARED EV CHARG SMITHERS EV	", 	lat: 	46.358866	, lng: 	-84.802221	, type: "		1 dc fast	"},
-{name: 	"Meijer Sault Ste Marie	", 	lat: 	46.464465	, lng: 	-84.386572	, type: "		8 dc fast	"},
-{name: 	"Quality inn	", 	lat: 	45.855856	, lng: 	-84.733492	, type: "	1 level 2		"}
+{	name: 	"	The Mariner North	", 	lat: 	47.468	, lng: 	-87.8886	, type: "	4 level 2, 	1 dc fast	", deadzone	: false	},
+{	name: 	"	Keweenah Mountain Lodge	", 	lat: 	47.46	, lng: 	-87.916	, type: "	1 level 2		", deadzone	: false	},
+{	name: 	"	Keweenah Coffee Works	", 	lat: 	47.2477	, lng: 	-88.45259	, type: "	1 level 2		", deadzone	: false	},
+{	name: 	"	Public Parking	", 	lat: 	47.120384	, lng: 	-88.5456896	, type: "		1 dc fast	", deadzone	: false	},
+{	name: 	"	Dial Help	", 	lat: 	47.1216568	, lng: 	-88.5663015	, type: "		1 dc fast	", deadzone	: false	},
+{	name: 	"	Parking	", 	lat: 	47.1216568	, lng: 	-88.5663015	, type: "	4 level 2		", deadzone	: false	},
+{	name: 	"	Adventure Mining Company	", 	lat: 	47.1216568	, lng: 	-88.5663015	, type: "	4 level 2		", deadzone	: false	},
+{	name: 	"	L'Anse Waterfront Park	", 	lat: 	46.7576234	, lng: 	-88.4549506	, type: "	2 level 2		", deadzone	: false	},
+{	name: 	"	Big Valley Ford	", 	lat: 	46.5347355	, lng: 	-89.2772185	, type: "	1 level 2		", deadzone	: false	},
+{	name: 	"	Big Powderhorn Mountain Resort	", 	lat: 	46.484828	, lng: 	-90.083714	, type: "	2 level 2		", deadzone	: false	},
+{	name: 	"	Downtown Square	", 	lat: 	46.4527731	, lng: 	-90.1693976	, type: "	2 level 2		", deadzone	: false	},
+{	name: 	"	Active Backwoods Retreat	", 	lat: 	46.420544	, lng: 	-90.151882	, type: "	1 level 2		", deadzone	: true	},
+{	name: 	"	Stateline Chevrolet Buick GMC	", 	lat: 	46.0919432	, lng: 	-88.6555184	, type: "	1 level 2		", deadzone	: false	},
+{	name: 	"	Crystal Fresh Market & Ace Hardware	", 	lat: 	46.0971659	, lng: 	-88.3546686	, type: "		1 dc fast	", deadzone	: false	},
+{	name: 	"	Edwards Automotive	", 	lat: 	45.8352905	, lng: 	-88.0570515	, type: "		1 dc fast	", deadzone	: false	},
+{	name: 	"	NORWAY MI DC FAST EV 1	", 	lat: 	45.7865313	, lng: 	-87.907543	, type: "		1 dc fast	", deadzone	: true	},
+{	name: 	"	Quality Inn & Suites - Tesla Destination	", 	lat: 	47.1214022	, lng: 	-88.5589532	, type: "	3 level 2		", deadzone	: true	},
+{	name: 	"	Meijer - Tesla Supercharger	", 	lat: 	45.7517904	, lng: 	-87.0866318	, type: "		8 dc fast charge	", deadzone	: false	},
+{	name: 	"	Meijer - Tesla Supercharger	", 	lat: 	46.5531675	, lng: 	-87.4719771	, type: "		8 dc fast charge	", deadzone	: false	},
+{	name: 	"	Riverside Toyota in Marquette	", 	lat: 	46.5095416	, lng: 	-87.6061369	, type: "	1 level 2		", deadzone	: false	},
+{	name: 	"	Northern Michigan University - Northern Center	", 	lat: 	46.556695	, lng: 	-87.39642	, type: "	1 level 2		", deadzone	: false	},
+{	name: 	"	HOTplate Clayworks	", 	lat: 	46.5435653	, lng: 	-87.3941125	, type: "	2 level 2		", deadzone	: false	},
+{	name: 	"	MARQUETTE BLP STATION 1	", 	lat: 	46.545577	, lng: 	-87.380151	, type: "	2 level 2 		", deadzone	: false	},
+{	name: 	"	UP Motor Lodge	", 	lat: 	46.5375732	, lng: 	-87.3954681	, type: "	2 level 2 		", deadzone	: true	},
+{	name: 	"	Quality Inn and Suites	", 	lat: 	46.328365	, lng: 	-85.504426	, type: "	2 level 2		", deadzone	: false	},
+{	name: 	"	Adoba Hotel Naubinway - Tesla Destination	", 	lat: 	46.109525	, lng: 	-85.34592	, type: "	1 level 2		", deadzone	: false	},
+{	name: 	"	SHARED EV CHARG SMITHERS EV	", 	lat: 	46.358866	, lng: 	-84.802221	, type: "		1 dc fast	", deadzone	: false	},
+{	name: 	"	Meijer Sault Ste Marie	", 	lat: 	46.464465	, lng: 	-84.386572	, type: "		8 dc fast	", deadzone	: false	},
+{	name: 	"	Quality inn	", 	lat: 	45.855856	, lng: 	-84.733492	, type: "	1 level 2		", deadzone	: false	}
 ];
 
 // initialize the map
-var map = L.map('map').setView([47.121133, -88.569418], 13);
+var map = L.map('map').setView([47.121133, -88.569418], 13); // Coordinates for Houghton
 
 // adding OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -82,11 +99,42 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
+/* USES LEAFLET NATIVE MARKERS INSTEAD OF CUSTOM IMAGE
 // we need to loop over the array of charging stations and create a marker for each one
 chargingStations.forEach(function(station) {
   L.marker([station.lat, station.lng]).addTo(map)
     .bindPopup(station.name + "<br>" + station.type);
 });
+*/
+ // Custom Markers
+chargingStations.forEach(function(station) {
+  var icon = station.deadzone ? deadzoneIcon : nonDeadzoneIcon;
+  L.marker([station.lat, station.lng], {icon: icon}).addTo(map)
+    .bindPopup('<b>' + station.name + '</b><br>Type: ' + station.type + '<br>Deadzone: ' + (station.deadzone ? 'Yes' : 'No'));
+});
+
+
+/*
+ IMPORTANT NOTE: The below implementation utilises Leaflets built in polyline to draw lines between points.
+
+ THIS IS NOT REFLECTIVE OF ACTUAL ROUTES! IN ORDER TO DRAW AN ACTUAL ROUTE, YOU MUST IMPORT AN API SUCH AS
+ GOOGLE MAPS, MAPBOX, ETC TO IMPORT A ROUTING SERVICE AND THEN IMPLEMENT THE ROUTING IN PLACE OF POLYLINE. YOU
+ NEED AN API KEY FOR THIS, LEAFLET DOES NOT HAVE A BUILT IN ROUTING SERVICE.
+
+*/
+
+
+// assuming chargingStations array is in the order we want to map lines to and from each point. Deadzones are pre determined by the provided csv coordinates file found in Assets.
+var latlngs = chargingStations.map(function(station) {
+  return [station.lat, station.lng];
+});
+
+// creates a polyline from the points and add it to the map
+var polyline = L.polyline(latlngs, {color: 'blue'}).addTo(map);
+
+// if we want to fit the map bounds to the polyline
+map.fitBounds(polyline.getBounds());
+
 
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
