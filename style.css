@@ -88,36 +88,7 @@ body {
   position: relative;
 }
 
-/*for the home page only*/
-.title {
-  color: var(--text-color);
-  font-family: var(--header-font);
-  font-weight: 550;
-  font-size: 2rem;
-  text-align: left;
-  margin-right: 10rem;
-  margin-left: 5.5rem;
-  padding-right: 45rem;
-  padding-left: 36.7rem;
-  padding-top: 1rem;
-  padding-bottom: 0rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
-  width: 40%;
-}
-/*for home page only */
-p {
-  display: flex;
-  color: var(--text-color);
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  text-align: left;
-  text-decoration: none;
-  width: 95%;
-  padding-left: 1.01rem;
-  text-indent: 2%;
-  margin-top: -2.5%;
-}
+
 
 .navbar a:hover {
   color: var(--hover-color);
@@ -238,36 +209,61 @@ h4 {
 }
 
 /*for the home page only*/
-.title div {
+/* .title div {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: left;
   position: relative;
-}
+} */
 
+.paragraphBlock{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.titlepara {
+  display: flex;
+  color: var(--text-color);
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+  width: 80%;
+  text-indent: 2%;
+}
+.title .underlined-text{
+  text-align: center;
+  width: 100%;
+}
 /*for the home page only*/
-.title {
+.title{
   color: var(--text-color);
   font-family: var(--header-font);
   font-weight: 550;
-  text-align: left;
-  margin-right: 10rem;
+  margin-top: 1.5rem;
+  /* margin-right: 10rem;
   margin-left: 5.5rem;
   padding-right: 45rem;
   padding-left: 36.7rem;
   padding-top: 1rem;
   padding-bottom: 0rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
-  width: 40%;
-}
 
+  margin-bottom: 0rem; */
+  width: 80%;
+}
+.circleTextWrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.circleWrap{
+  width: 800px;
+}
 .circle1 {
-    position: absolute;
+    position: relative;
     top: 300%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    transform: translate(30%, -290%) scale(110%);
     border-radius: 50%;
     z-index: -1;
     width: 800px;
@@ -275,7 +271,7 @@ h4 {
     background-color: #2E7012;
 }
 .circle2 {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -286,7 +282,7 @@ h4 {
     background-color: #568C3F;
 }
 .circle3 {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -298,7 +294,7 @@ h4 {
 }
 
 .car {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     width: 90%;
@@ -306,34 +302,12 @@ h4 {
     transform: translate(-50%, -50%);
 }
 
-.titlepara {
-  display: flex;
-  color: var(--text-color);
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  text-align: left;
-  text-decoration: none;
-  width: 39%;
-  padding-left: 10rem;
-  text-indent: 2%;
-  margin-top: -1.5%;
-  margin-left: 33rem;
-  margin-right: 25rem;
-}
 /* source pageonly */
 p {
   display: flex;
   color: var(--text-color);
   font-family: "Urbanist", sans-serif;
   font-size: 20px;
-  text-align: left;
-  text-decoration: none;
-  width: 60%;
-  padding-left: 6rem;
-  text-indent: .6%;
-  margin-top: -2.5%;
-  margin-left: 9rem;
-  margin-right: 9rem;
 }
 
 .center-elements {
