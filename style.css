@@ -453,6 +453,12 @@ p {
   width: 100%;
 }
 
+.batteryImage {
+    width: 50%;
+    margin-top: 2rem;
+    border-radius: 5rem;
+}
+
 /*End of map styles*/
 
 /* Start of Form Styles*/
