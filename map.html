@@ -78,6 +78,7 @@ var chargingStations = [
 
 // initialize the map
 var map = L.map('map').setView([47.121133, -88.569418], 13);
+L.circle([45.855856, -84.386572], {radius:200}).addTo(map);
 
 // adding OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
