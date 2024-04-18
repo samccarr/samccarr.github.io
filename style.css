@@ -263,6 +263,49 @@ h4 {
   width: 40%;
 }
 
+.circle1 {
+    position: absolute;
+    top: 300%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+    width: 800px;
+    height: 800px;
+    background-color: #2E7012;
+}
+.circle2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+    width: 675px;
+    height: 675px;
+    background-color: #568C3F;
+}
+.circle3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+    width: 550px;
+    height: 550px;
+    background-color: #ADEBFF;
+}
+
+.car {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
 .titlepara {
   display: flex;
   color: var(--text-color);
@@ -276,7 +319,6 @@ h4 {
   margin-top: -1.5%;
   margin-left: 33rem;
   margin-right: 25rem;
-  z-index: 2;
 }
 /* source pageonly */
 p {
@@ -424,12 +466,56 @@ p {
 
 
 /* Home page circles */
+/*
+.circle1, .circle2, .cricle3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%
+    z-index: -1;
+}
+
+.circle1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%
+    z-index: -1;
+    width: 800px;
+    height: 800px;
+    background-color: #2E7012;
+}
+.circle2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%
+    z-index: -1;
+    width: 700px;
+    height: 700px;
+    background-color: #568C3F;
+}
+.circle3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%
+    z-index: -1;
+    width: 600px;
+    height: 600px;
+    background-color: #ADEBFF;
+}
+/*
 .circle1 {
     position: relative;
     width: 800px;
     height: 800px;
     background-color: #2E7012;
-    z-index: 1;
+    z-index: -1;
     border-radius: 50%
 }
 .circle2 {
@@ -437,7 +523,7 @@ p {
     width: 700px;
     height: 700px;
     background-color: #568C3F;
-    z-index: 1;
+    z-index: -1;
     border-radius: 50%
 }
 .circle3 {
@@ -445,6 +531,7 @@ p {
     width: 600px;
     height: 600px;
     background-color: #ADEBFF;
-    z-index: 1;
+    z-index: -1;
     border-radius: 50%
 }
+*/
