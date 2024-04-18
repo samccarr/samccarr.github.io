@@ -206,6 +206,12 @@ h4 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+h4.about-underline:first-of-type{
+  margin-top: 7rem;
+}
+p.text:last-of-type{
+  margin-bottom: 7rem;
+}
 h4.about-underline{
   text-align: center;
   width: 70%;
@@ -221,6 +227,7 @@ h4.about-underline{
 }
 .homeBottomWrapper .text{
   width: 70%;
+  font-size: 2rem;
 }
 
 /*for the home page only*/
@@ -244,7 +251,7 @@ h4.about-underline{
   display: flex;
   color: var(--text-color);
   font-family: "Urbanist", sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
   text-align: left;
   text-decoration: none;
   width: 80%;
@@ -275,13 +282,13 @@ h4.about-underline{
   justify-content: space-between;
 }
 .circleWrap{
-  width: 800px;
-  max-width: 50%;
+  padding-left: 15%;
+  max-width: 35%;
 }
 .circle1 {
     position: relative;
     top: 300%;
-    transform: translate(20%, -295%) scale(100%);
+    transform: translateY(-290%) scale(110%);
     border-radius: 50%;
     z-index: -1;
     width: 800px;
@@ -458,81 +465,13 @@ p {
   height: 80vh;
   min-height: 20rem;
 }
-/* End of Form Styles*/
 
-
-/* Home page circles */
-/*
-.circle1, .circle2, .cricle3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%
-    z-index: -1;
-}
-
-.circle1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%
-    z-index: -1;
-    width: 800px;
-    height: 800px;
-    background-color: #2E7012;
-}
-.circle2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%
-    z-index: -1;
-    width: 700px;
-    height: 700px;
-    background-color: #568C3F;
-}
-.circle3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%
-    z-index: -1;
-    width: 600px;
-    height: 600px;
-    background-color: #ADEBFF;
-}
-/*
-.circle1 {
-    position: relative;
-    width: 800px;
-    height: 800px;
-    background-color: #2E7012;
-    z-index: -1;
-    border-radius: 50%
-}
-.circle2 {
-    transform: translate(12.5%, 12.5%);
-    width: 700px;
-    height: 700px;
-    background-color: #568C3F;
-    z-index: -1;
-    border-radius: 50%
-}
-.circle3 {
-    transform: translate(17%, 17%);
-    width: 600px;
-    height: 600px;
-    background-color: #ADEBFF;
-    z-index: -1;
-    border-radius: 50%
-}
-*/
 @media(max-width: 1900px){
   .circle1{
-    transform: translate(10%, -305%) scale(90%);
+    transform: translateY(-305%) scale(90%);
+  }
+  .circleWrap{
+    padding-left: 5%;
+    max-width: 40%;
   }
 }
