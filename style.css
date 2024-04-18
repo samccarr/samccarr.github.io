@@ -472,3 +472,17 @@ p {
     max-width: 40%;
   }
 }
+@media(max-width: 1250px){
+  .circleWrap, .circle1, .circle2, .circle3{
+    display: none;
+  }
+  .paragraphBlock{
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+  .circleTextWrap{
+    justify-content: center;
+    align-items: center;
+  }
+}
