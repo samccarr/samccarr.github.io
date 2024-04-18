@@ -459,6 +459,12 @@ p {
     border-radius: 5rem;
 }
 
+.imageCaption {
+  color: var(--text-color);
+  font-size: medium;
+  width: 50%;
+}
+
 /*End of map styles*/
 
 /* Start of Form Styles*/
