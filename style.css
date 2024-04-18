@@ -446,6 +446,13 @@ p {
   padding-left: 100px;
 }
 
+.mapWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 /*End of map styles*/
 
 /* Start of Form Styles*/
