@@ -9,7 +9,7 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "https://samccarr.github.io/",
+            "url": C:\Users\girlw\OneDrive\Documents\samccarr.github.io\.vscode\launch.json/,
             "webRoot": "${workspaceFolder}"
         }
         
