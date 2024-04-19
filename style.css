@@ -203,7 +203,7 @@ h4 {
   color: var(--text-color);
   font-family: var(--header-font);
   font-weight: 550;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 h4.about-underline:first-of-type{
@@ -214,7 +214,7 @@ p.text:last-of-type{
 }
 h4.about-underline{
   text-align: center;
-  width: 70%;
+  width: 30%;
 }
 .homeBottom{
   margin-top: 5rem;
