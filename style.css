@@ -203,7 +203,7 @@ h4 {
   color: var(--text-color);
   font-family: var(--header-font);
   font-weight: 550;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 h4.about-underline:first-of-type{
@@ -227,7 +227,7 @@ h4.about-underline{
 }
 .homeBottomWrapper .text{
   width: 70%;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 /*for the home page only*/
@@ -245,7 +245,7 @@ h4.about-underline{
   align-items: flex-end;
   justify-content: flex-start;
   width: 45%;
-  padding-right: 5%;
+  padding-right: 3%;
 }
 .titlepara {
   display: flex;
