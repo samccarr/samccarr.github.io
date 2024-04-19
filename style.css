@@ -231,7 +231,7 @@ h4.about-underline{
 }
 
 /*for the home page only*/
-/* .title div {
+
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -266,14 +266,6 @@ h4.about-underline{
   font-family: var(--header-font);
   font-weight: 550;
   margin-top: 1.5rem;
-  /* margin-right: 10rem;
-  margin-left: 5.5rem;
-  padding-right: 45rem;
-  padding-left: 36.7rem;
-  padding-top: 1rem;
-  padding-bottom: 0rem;
-
-  margin-bottom: 0rem; */
   width: 80%;
 }
 
@@ -342,7 +334,7 @@ h4.about-underline{
     transform: translate(-50%, -50%);
 }
 
-/* source pageonly */
+/* source page only */
 p {
   display: flex;
   color: var(--text-color);
