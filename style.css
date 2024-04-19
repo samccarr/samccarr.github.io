@@ -203,7 +203,7 @@ h4 {
   color: var(--text-color);
   font-family: var(--header-font);
   font-weight: 550;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 h4.about-underline:first-of-type{
@@ -227,7 +227,7 @@ h4.about-underline{
 }
 .homeBottomWrapper .text{
   width: 70%;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /*for the home page only*/
@@ -251,7 +251,7 @@ h4.about-underline{
   display: flex;
   color: var(--text-color);
   font-family: "Urbanist", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-align: left;
   text-decoration: none;
   width: 80%;
