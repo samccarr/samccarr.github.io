@@ -251,7 +251,7 @@ h4.about-underline{
   display: flex;
   color: var(--text-color);
   font-family: "Urbanist", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: left;
   text-decoration: none;
   width: 80%;
@@ -276,6 +276,19 @@ h4.about-underline{
   margin-bottom: 0rem; */
   width: 80%;
 }
+
+.maptitle {
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 600;
+  font-size: 1px;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.05rem;
+  margin-bottom: 3rem;
+  margin-left: 1.1%;
+}
+
 .circleTextWrap{
   display: flex;
   flex-direction: row;
@@ -392,14 +405,14 @@ p {
   font-weight: var(--header-font-weight);
   line-height: 0.5rem;
   font-size: 1.8rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
   margin-bottom: 1.5rem;
 }
 .faqSubHeader {
   font-size: 1.4rem;
   font-family: var(--header-font);
-  margin-bottom: .1rem;
-  margin-top: -7.5rem;
+  margin-bottom: 0rem;
+  margin-top: -2.5rem;
 }
 .faqUnderline {
   height: 5px;
@@ -423,14 +436,18 @@ p {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+ 
 }
 
 .faqBottomSection {
   width: fit-content;
   margin: 4rem;
   padding: 4rem;
-  margin-top: 15vh;
+  margin-top: 5vh;
   margin-bottom: -0.3rem;
+  width: 70vw;
+  border-radius: 1rem;
+  background-color: #ffffff10;
 }
 
 .subHeaderContent {
@@ -441,7 +458,7 @@ p {
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   margin-bottom: 0.25rem;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   padding-right: 100px;
   padding-left: 100px;
 }
@@ -450,7 +467,16 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 1rem;
+  margin-bottom: 1%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: -3%;
+  padding-left:-3%;
+  background-color: #ffffff10;
+
 }
 
 .batteryImage {
