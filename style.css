@@ -227,7 +227,11 @@ h4.about-underline{
 }
 .homeBottomWrapper .text{
   width: 70%;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  background-color: #ffffff10;
+  padding-right: 1%; 
+  padding-left: 1%;
 }
 
 /*for the home page only*/
@@ -255,10 +259,12 @@ h4.about-underline{
   text-align: left;
   text-decoration: none;
   width: 80%;
+  paddingg-left: 18%;
 }
 .title .underlined-text{
   text-align: center;
   width: 100%;
+  padding-left: 17%;
 }
 /*for the home page only*/
 .title{
